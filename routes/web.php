@@ -19,7 +19,12 @@ Route::get('/home2', function () {
 })->name('home2');;
 Route::redirect('/anasayfa', '/home')->name('anasayfa');;
 
+Route::get('/home', [HomeController::class, 'index'])->name('index');
+
+Route::get('/about', [HomeController::class, 'about'])->name('about');
+
 Route::get('/test', [HomeController::class, 'test'])->name('test');
+
 Route::get('/id/{id}/{name}', [HomeController::class, 'send'])->whereNumber('id')->whereAlpha('name')->name('send');;
 //Route::get('/', function () {
   //  return view('home.index',['aname' => 'Emre Aluc']);
