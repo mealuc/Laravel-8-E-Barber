@@ -19,12 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7772565d-2bfa-43e8-99f7-20e07dfcedd0" name="Default Changelist" comment="">
+    <list default="true" id="7772565d-2bfa-43e8-99f7-20e07dfcedd0" name="Default Changelist" comment="Pages Updated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMP/style-barber/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/TEMP/style-barber/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMP/style-barber/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/TEMP/style-barber/contact.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/test.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/test.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -197,8 +196,21 @@
       <workItem from="1607276909148" duration="422000" />
       <workItem from="1607787634920" duration="1474000" />
       <workItem from="1607791996379" duration="5366000" />
-      <workItem from="1607863140845" duration="4569000" />
+      <workItem from="1607863140845" duration="4742000" />
+      <workItem from="1608203111942" duration="1938000" />
+      <workItem from="1608209195079" duration="3668000" />
+      <workItem from="1608374609618" duration="4156000" />
+      <workItem from="1608459741585" duration="1847000" />
+      <workItem from="1608482653262" duration="4307000" />
     </task>
+    <task id="LOCAL-00001" summary="Pages Updated">
+      <created>1607867906687</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607867906687</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,11 +228,15 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Pages Updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pages Updated" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1607866592174">
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1608460564310">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607866592174" />
+    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608460564310" />
     <state x="483" y="199" key="SettingsEditor" timestamp="1607276994880">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -229,6 +245,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1607867830176" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1607867918174">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607867918174" />
     <state x="606" y="209" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1607788562382">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

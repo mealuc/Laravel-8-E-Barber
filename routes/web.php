@@ -19,7 +19,15 @@ Route::get('/home2', function () {
 })->name('home2');;
 Route::redirect('/anasayfa', '/home')->name('anasayfa');;
 
-Route::get('/home', [HomeController::class, 'index'])->name('index');
+Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
+
+Route::get('/appoint', [HomeController::class, 'appoint'])->name('appoint');
+
+Route::get('/barbers', [HomeController::class, 'barbers'])->name('barbers');
+
+Route::get('/services', [HomeController::class, 'services'])->name('services');
+
+Route::get('/', [HomeController::class, 'index'])->name('index');
 
 Route::get('/about', [HomeController::class, 'about'])->name('about');
 
