@@ -19,7 +19,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{asset('assets')}}/css/bootstrap.min.css">
     <!-- Site CSS -->
-    <link rel="stylesheet" href="{{asset('assets')}}/style.css">
+    <link rel="stylesheet" href="{{asset('assets')}}/css/style.css">
     <!-- ALL VERSION CSS -->
     <link rel="stylesheet" href="{{asset('assets')}}/css/versions.css">
     <!-- Responsive CSS -->

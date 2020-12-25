@@ -1,10 +1,11 @@
-@extends('layouts.home')
-@section('title', 'Anasayfa')
+<!DOCTYPE html>
+<html lang="en">
+@include('home.head_css')
+<body class="barber_version">
 
-@section('description')
-Ailenizin berbercisi...
-@endsection
-
+@include('home._loader')
+@include('home._header')
+@include('home._slider')
 @section('content')
     <!-- Page Content -->
     <div id="page-content-wrapper">
@@ -71,8 +72,8 @@ Ailenizin berbercisi...
 
                             <div class="service-widget">
                                 <div class="post-media wow fadeIn">
-                                    <a href="uploads/barber_01.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
-                                    <img src="uploads/barber_01.jpg" alt="" class="img-responsive img-rounded">
+                                    <a href="{{asset('assets')}}/uploads/barber_01.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+                                    <img src="{{asset('assets')}}/uploads/barber_01.jpg" alt="" class="img-responsive img-rounded">
                                 </div>
                                 <div class="dit-box">
                                     <h3>Show us Your Graft Style</h3>
@@ -82,8 +83,8 @@ Ailenizin berbercisi...
 
                             <div class="service-widget">
                                 <div class="post-media wow fadeIn">
-                                    <a href="uploads/barber_02.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
-                                    <img src="uploads/barber_02.jpg" alt="" class="img-responsive img-rounded">
+                                    <a href="{{asset('assets')}}/uploads/barber_02.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+                                    <img src="{{asset('assets')}}/uploads/barber_02.jpg" alt="" class="img-responsive img-rounded">
                                 </div>
                                 <div class="dit-box">
                                     <h3>Outstanding Barber Shop</h3>
@@ -93,8 +94,8 @@ Ailenizin berbercisi...
 
                             <div class="service-widget">
                                 <div class="post-media wow fadeIn">
-                                    <a href="uploads/barber_03.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
-                                    <img src="uploads/barber_03.jpg" alt="" class="img-responsive img-rounded">
+                                    <a href="{{asset('assets')}}/uploads/barber_03.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+                                    <img src="{{asset('assets')}}/uploads/barber_03.jpg" alt="" class="img-responsive img-rounded">
                                 </div>
                                 <div class="dit-box">
                                     <h3>The Barber Materials</h3>
@@ -104,8 +105,8 @@ Ailenizin berbercisi...
 
                             <div class="service-widget">
                                 <div class="post-media wow fadeIn">
-                                    <a href="uploads/barber_04.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
-                                    <img src="uploads/barber_04.jpg" alt="" class="img-responsive img-rounded">
+                                    <a href="{{asset('assets')}}/uploads/barber_04.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+                                    <img src="{{asset('assets')}}/uploads/barber_04.jpg" alt="" class="img-responsive img-rounded">
                                 </div>
                                 <div class="dit-box">
                                     <h3>The Barber Materials</h3>
@@ -115,8 +116,8 @@ Ailenizin berbercisi...
 
                             <div class="service-widget">
                                 <div class="post-media wow fadeIn">
-                                    <a href="uploads/barber_05.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
-                                    <img src="uploads/barber_05.jpg" alt="" class="img-responsive img-rounded">
+                                    <a href="{{asset('assets')}}/uploads/barber_05.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+                                    <img src="{{asset('assets')}}/uploads/barber_05.jpg" alt="" class="img-responsive img-rounded">
                                 </div>
                                 <div class="dit-box">
                                     <h3>The Barber Materials</h3>
@@ -126,8 +127,8 @@ Ailenizin berbercisi...
 
                             <div class="service-widget">
                                 <div class="post-media wow fadeIn">
-                                    <a href="uploads/barber_06.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
-                                    <img src="uploads/barber_06.jpg" alt="" class="img-responsive img-rounded">
+                                    <a href="{{asset('assets')}}/uploads/barber_06.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+                                    <img src="{{asset('assets')}}/uploads/barber_06.jpg" alt="" class="img-responsive img-rounded">
                                 </div>
                                 <div class="dit-box">
                                     <h3>The Barber Materials</h3>
@@ -247,7 +248,7 @@ Ailenizin berbercisi...
                         <div class="widget our-inner-taem clearfix">
                             <div class="t-top"></div>
                             <div class="hover-br">
-                                <img src="uploads/barber_team_01.jpg" alt="" class="img-responsive">
+                                <img src="{{asset('assets')}}/uploads/barber_team_01.jpg" alt="" class="img-responsive">
                                 <div class="social-up-hover">
                                     <div class="footer-social">
                                         <a href="#" class="btn grd1"><i class="fa fa-facebook"></i></a>
@@ -273,7 +274,7 @@ Ailenizin berbercisi...
                         <div class="widget our-inner-taem clearfix">
                             <div class="t-top"></div>
                             <div class="hover-br">
-                                <img src="uploads/barber_team_03.jpg" alt="" class="img-responsive">
+                                <img src="{{asset('assets')}}/uploads/barber_team_03.jpg" alt="" class="img-responsive">
                                 <div class="social-up-hover">
                                     <div class="footer-social">
                                         <a href="#" class="btn grd1"><i class="fa fa-facebook"></i></a>
@@ -299,7 +300,7 @@ Ailenizin berbercisi...
                         <div class="widget our-inner-taem clearfix">
                             <div class="t-top"></div>
                             <div class="hover-br">
-                                <img src="uploads/barber_team_02.jpg" alt="" class="img-responsive">
+                                <img src="{{asset('assets')}}/uploads/barber_team_02.jpg" alt="" class="img-responsive">
                                 <div class="social-up-hover">
                                     <div class="footer-social">
                                         <a href="#" class="btn grd1"><i class="fa fa-facebook"></i></a>
@@ -339,7 +340,7 @@ Ailenizin berbercisi...
                             <div class="testimonial clearfix">
                                 <div class="testi-meta">
                                     <i class="fa fa-quote-right"></i>
-                                    <img src="uploads/testi_01.png" alt="" class="img-responsive alignright">
+                                    <img src="{{asset('assets')}}/uploads/testi_01.png" alt="" class="img-responsive alignright">
                                     <h4>James Fernando <small>- Manager of Racer</small></h4>
                                 </div>
                                 <div class="desc">
@@ -352,7 +353,7 @@ Ailenizin berbercisi...
                             <div class="testimonial clearfix">
                                 <div class="testi-meta">
                                     <i class="fa fa-quote-right"></i>
-                                    <img src="uploads/testi_02.png" alt="" class="img-responsive alignright">
+                                    <img src="{{asset('assets')}}/uploads/testi_02.png" alt="" class="img-responsive alignright">
                                     <h4>Jacques Philips <small>- Designer</small></h4>
                                 </div>
                                 <div class="desc">
@@ -365,7 +366,7 @@ Ailenizin berbercisi...
                             <div class="testimonial clearfix">
                                 <div class="testi-meta">
                                     <i class="fa fa-quote-right"></i>
-                                    <img src="uploads/testi_03.png" alt="" class="img-responsive alignright">
+                                    <img src="{{asset('assets')}}/uploads/testi_03.png" alt="" class="img-responsive alignright">
                                     <h4>Venanda Mercy <small>- Newyork City</small></h4>
                                 </div>
                                 <div class="desc">
@@ -378,7 +379,7 @@ Ailenizin berbercisi...
                             <div class="testimonial clearfix">
                                 <div class="testi-meta">
                                     <i class="fa fa-quote-right"></i>
-                                    <img src="uploads/testi_03.png" alt="" class="img-responsive alignright">
+                                    <img src="{{asset('assets')}}/uploads/testi_03.png" alt="" class="img-responsive alignright">
                                     <h4>Venanda Mercy <small>- Newyork City</small></h4>
                                 </div>
                                 <div class="desc">
@@ -394,3 +395,4 @@ Ailenizin berbercisi...
             </div><!-- end container -->
         </div>
 @show
+@include()

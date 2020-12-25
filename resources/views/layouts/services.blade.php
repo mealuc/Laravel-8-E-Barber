@@ -138,17 +138,6 @@
                                 <!-- end testi-meta -->
                             </div>
                             <!-- end testimonial -->
-                            <div class="testimonial clearfix">
-                                <div class="testi-meta">
-                                    <i class="fa fa-quote-right"></i>
-                                    <img src="{{asset('assets')}}/uploads/testi_03.png" alt="" class="img-responsive alignright">
-                                    <h4>Venanda Mercy <small>- Newyork City</small></h4>
-                                </div>
-                                <div class="desc">
-                                    <h3>Great & Talented Team!</h3>
-                                    <p class="lead">The master-builder of human happines no one rejects, dislikes avoids pleasure itself, because it is very pursue pleasure. </p>
-                                </div>
-                                <!-- end testi-meta -->
                             </div>
                             <!-- end testimonial -->
                             <div class="testimonial clearfix">
