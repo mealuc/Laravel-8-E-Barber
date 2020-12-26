@@ -19,6 +19,8 @@ Route::get('/home2', function () {
 })->name('home2');;
 Route::redirect('/anasayfa', '/home')->name('anasayfa');;
 
+Route::get('/admin', [App\Http\Controllers\Admin\HomeController::class, 'admin'])->name('admin');
+
 Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
 
 Route::get('/appoint', [HomeController::class, 'appoint'])->name('appoint');

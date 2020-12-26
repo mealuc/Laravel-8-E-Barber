@@ -1,8 +1,8 @@
+<!--Out of usage-->
 <!DOCTYPE html>
 <html lang="en">
 @include('home.head_css')
 <body class="barber_version">
-
 @include('home._loader')
 @include('home._header')
 @include('home._slider')
@@ -396,3 +396,4 @@
         </div>
 @show
 @include()
+<!--Out of usage-->
