@@ -21,6 +21,10 @@ Route::redirect('/anasayfa', '/home')->name('anasayfa');;
 
 Route::get('/admin', [App\Http\Controllers\Admin\HomeController::class, 'admin'])->name('admin');
 
+Route::get('/admin/login', [HomeController::class, 'login'])->name('adminlogin');
+
+Route::post('/admin/logincheck', [HomeController::class, 'logincheck'])->name('admin_logincheck');
+
 Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
 
 Route::get('/appoint', [HomeController::class, 'appoint'])->name('appoint');

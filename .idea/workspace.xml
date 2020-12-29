@@ -19,10 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7772565d-2bfa-43e8-99f7-20e07dfcedd0" name="Default Changelist" comment="added style.css file and corrected unnecessary codes.">
+    <list default="true" id="7772565d-2bfa-43e8-99f7-20e07dfcedd0" name="Default Changelist" comment="Admin page added.Splitted into parts and arranged.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/about.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -169,6 +168,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mariadb&#10;mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -205,7 +205,8 @@
       <workItem from="1608829642953" duration="4478000" />
       <workItem from="1608918792760" duration="2775000" />
       <workItem from="1608922061078" duration="286000" />
-      <workItem from="1608977778503" duration="5782000" />
+      <workItem from="1608977778503" duration="6701000" />
+      <workItem from="1609255587998" duration="6307000" />
     </task>
     <task id="LOCAL-00001" summary="Pages Updated">
       <created>1607867906687</created>
@@ -228,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608922254659</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Admin page added.Splitted into parts and arranged.">
+      <created>1608984274814</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1608984274814</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,13 +258,22 @@
     <MESSAGE value="Pages Updated" />
     <MESSAGE value="All of main pages changed with template" />
     <MESSAGE value="added style.css file and corrected unnecessary codes." />
-    <option name="LAST_COMMIT_MESSAGE" value="added style.css file and corrected unnecessary codes." />
+    <MESSAGE value="Admin page added.Splitted into parts and arranged." />
+    <option name="LAST_COMMIT_MESSAGE" value="Admin page added.Splitted into parts and arranged." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1608982300993">
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609266059614">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608982300993" />
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609266059614" />
+    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1609264469863">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1609264469863" />
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1609257858553">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609257858553" />
     <state x="483" y="199" key="SettingsEditor" timestamp="1607276994880">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -265,10 +282,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1607867830176" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1608922263952">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1608984295400">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608922263952" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608984295400" />
     <state x="606" y="209" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1607788562382">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
