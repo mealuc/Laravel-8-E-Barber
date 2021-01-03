@@ -11,7 +11,7 @@
     <!-- GOOGLE FONTS-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>
 </head>
-<body style="background-color: #E2E2E2;">
+<body style="background-color: #e2e2e2;">
 <div class="container">
     <div class="row text-center " style="padding-top:100px;">
         <div class="col-md-12">
@@ -21,7 +21,7 @@
     <div class="row ">
         <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
             <div class="panel-body">
-                <form role="form" action="{{'admin_logincheck'}}" method="post">
+                <form role="form" action="{{route('logincheck')}}" method="post" class="form-login">
                     @csrf
                     <hr/>
                     <br/>
@@ -42,7 +42,7 @@
                         </span>
                     </div>
                     <div>
-                        <button type="submit" class="btn btn-primary ">Login</a>
+                        <button type="submit" class="btn btn-primary ">Login</button>
                     </div>
                     <hr/>
                     Not register ? <a href="index.html">click here </a> or go to <a href="index.html">Home</a>
