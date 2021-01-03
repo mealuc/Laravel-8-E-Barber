@@ -6,7 +6,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.html">AİLE BERBERİ</a>
+        <a class="navbar-brand" href="{{route('admin')}}">AİLE BERBERİ</a>
     </div>
 
     <div class="header-right" class="info">

@@ -19,6 +19,9 @@
                 <a class="active-menu" href="index.html"><i class="fa fa-dashboard "></i>Dashboard</a>
             </li>
             <li>
+                <a href="{{route('admin_category')}}"><i class="fa fa-amazon "></i>Category</a>
+            </li>
+            <li>
                 <a href="#"><i class="fa fa-desktop "></i>UI Elements <span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li>
