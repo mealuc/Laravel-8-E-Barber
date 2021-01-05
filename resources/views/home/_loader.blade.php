@@ -13,8 +13,5 @@
         <span class="loading" data-name="Loading">StyleBarber Loading</span>
     </div>
 </div>
-<div class="top-add alert alert-light alert-dismissible">
-    <button type="button" class="close" data-dismiss="alert">&times;</button>
-    <strong>Success!</strong> This alert box could indicate a successful or positive action.
-</div>
+
 

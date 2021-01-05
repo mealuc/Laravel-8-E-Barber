@@ -19,10 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7772565d-2bfa-43e8-99f7-20e07dfcedd0" name="Default Changelist" comment="Admin &quot;Category&quot; page and its model view controller route systems were added.Also Table and category query processes were added.">
+    <list default="true" id="7772565d-2bfa-43e8-99f7-20e07dfcedd0" name="Default Changelist" comment="Admin &quot;Category&quot; page category add/delete were  added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/category_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category_add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_loader.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_loader.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -229,7 +231,8 @@
       <workItem from="1609694476265" duration="5954000" />
       <workItem from="1609704631009" duration="51000" />
       <workItem from="1609757318216" duration="3418000" />
-      <workItem from="1609772891714" duration="3908000" />
+      <workItem from="1609772891714" duration="4083000" />
+      <workItem from="1609839499208" duration="3974000" />
     </task>
     <task id="LOCAL-00001" summary="Pages Updated">
       <created>1607867906687</created>
@@ -287,7 +290,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609704364569</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Admin &quot;Category&quot; page category add/delete were  added">
+      <created>1609777835017</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1609777835017</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -313,7 +323,8 @@
     <MESSAGE value="Admin Login page added." />
     <MESSAGE value="Admin &quot;Login&quot; and &quot;Logout&quot; systems were added.In database created categories table." />
     <MESSAGE value="Admin &quot;Category&quot; page and its model view controller route systems were added.Also Table and category query processes were added." />
-    <option name="LAST_COMMIT_MESSAGE" value="Admin &quot;Category&quot; page and its model view controller route systems were added.Also Table and category query processes were added." />
+    <MESSAGE value="Admin &quot;Category&quot; page category add/delete were  added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Admin &quot;Category&quot; page category add/delete were  added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="336" y="361" key="#SQL_Dialects" timestamp="1609701476037">
@@ -344,10 +355,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1607867830176" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1609704373987">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1609777846241">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609704373987" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609777846241" />
     <state x="606" y="209" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1607788562382">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

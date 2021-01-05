@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Category;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use App\Models\Flight;
 
 class CategoryController extends Controller
 {
@@ -65,9 +66,11 @@ class CategoryController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Category $category,$id)
     {
-        //
+        $data= Category::find($id);
+        $datalist = DB::table('categories')->get()->where('parent_id',0);
+        return view('admin.category_edit',['data'=>$data,'datalist'=>$datalist]);
     }
 
     /**
@@ -77,9 +80,17 @@ class CategoryController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request,Category $category,$id)
     {
-        //
+
+        $data = Category::find($id);
+        $data->parent_id =$request->input('parent_id');
+        $data->title =$request->input('title');
+        $data->keywords =$request->input('keywords');
+        $data->description =$request->input('description');
+        $data->status =$request->input('status');
+        $data->save();
+        return redirect()->route('admin_category');
     }
 
     /**
