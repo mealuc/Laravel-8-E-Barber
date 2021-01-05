@@ -1,13 +1,13 @@
 @extends('layouts.admin')
-@section('title','Category List')
+@section('title','Product List')
 @section('content')
     <div id="wrapper">
         <div id="page-wrapper">
             <div id="page-inner">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="page-head-line">CATEGORY</h1>
-                        <a href="{{route('admin_category_add')}}" class="btn btn-primary" type="button">Add Category</a>
+                        <h1 class="page-head-line">Product</h1>
+                        <a href="{{route('admin_product_add')}}" class="btn btn-primary" type="button">Add Product</a>
                     </div>
                 </div>
                 <div class="alert alert-info">
@@ -21,22 +21,35 @@
                                             <thead>
                                             <tr>
                                                 <th>ID</th>
-                                                <th>Parent</th>
+                                                <th>Category</th>
                                                 <th>Title</th>
+                                                <th>Price</th>
+                                                <th>Image</th>
+                                                <th>Tax</th>
+                                                <th>Quantity</th>
+                                                <th>Minquantity</th>
+                                                <th>Keywords</th>
+                                                <th>Description</th>
                                                 <th>Status</th>
-                                                <th>Edit</th>
-                                                <th>Delete</th>
+                                                <th style="align-content: center"colspan="2">Actions</th>
                                             </tr>
                                             </thead>
                                             <tbody>
                                             @foreach ($datalist as $rs)
                                                 <tr>
                                                     <td>{{$rs->id}}</td>
-                                                    <td>{{$rs->parent_id}}</td>
+                                                    <td>{{$rs->category_id}}</td>
                                                     <td>{{$rs->title}}</td>
+                                                    <td>{{$rs->price}}</td>
+                                                    <td></td>
+                                                    <td>{{$rs->tax}}</td>
+                                                    <td>{{$rs->quantity}}</td>
+                                                    <td>{{$rs->minquantity}}</td>
+                                                    <td>{{$rs->keywords}}</td>
+                                                    <td>{{$rs->description}}</td>
                                                     <td>{{$rs->status}}</td>
-                                                    <td><a href="{{route('admin_category_edit',['id'=>$rs->id])}}">Edit</a></td>
-                                                    <td><a href="{{route('admin_category_delete',['id'=>$rs->id])}}" onclick="return confirm('It will be deleted! Are you sure?')">Delete</a></td>
+                                                    <td><a href="{{route('admin_product_edit',['id'=>$rs->id])}}">Edit</a></td>
+                                                    <td><a href="{{route('admin_product_delete',['id'=>$rs->id])}}" onclick="return confirm('It will be deleted! Are you sure?')">Delete</a></td>
                                                 </tr>
                                             </tbody>
                                             @endforeach

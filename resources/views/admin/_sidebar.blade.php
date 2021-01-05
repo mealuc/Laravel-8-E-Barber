@@ -22,6 +22,9 @@
                 <a href="{{route('admin_category')}}"><i class="fa fa-amazon "></i>Category</a>
             </li>
             <li>
+                <a href="{{route('admin_products')}}"><i class="fa fa-amazon "></i>Products</a>
+            </li>
+            <li>
                 <a href="#"><i class="fa fa-desktop "></i>UI Elements <span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li>
