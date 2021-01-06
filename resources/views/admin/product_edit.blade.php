@@ -9,7 +9,7 @@
                         <h1 class="page-head-line">Edit Product </h1>
                         <div class="panel panel-info">
                             <div class="panel-body">
-                                <form role="form" action="{{route('admin_product_update',['id'=>$data->id])}})}}"method="post">
+                                <form role="form" action="{{route('admin_product_update',['id'=>$data->id])}})}}"method="post" enctype="multipart/form-data">
                                     @csrf
                                     <div class="form-group">
                                         <label>Category</label>
@@ -28,6 +28,13 @@
                                         <input class="form-control" type="number" value="{{$data->price}}" name="price">
                                     </div>
                                     <div class="form-group">
+                                        <label>Image</label>
+                                        <input class="form-control" type="file" name="image" value="{{$data->image}}">
+                                        @if ($data->image)
+                                            <img src="{{Storage::url($data->image)}}"height="100"alt=""
+                                        @endif
+                                    </div>
+                                    <div class="form-group">
                                         <label>Tax</label>
                                         <input class="form-control" type="number" value="{{$data->tax}}" name="tax">
                                     </div>
@@ -41,7 +48,12 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Detail</label>
-                                        <input class="form-control" type="text" value="{{$data->detail}}" name="detail">
+                                        <textarea id="summernote" name="detail">{{$data->detail}}</textarea>
+                                        <script>
+                                            $(document).ready(function() {
+                                                $('#summernote').summernote();
+                                            });
+                                        </script>
                                     </div>
                                     <div class="form-group">
                                         <label>Keywords</label>

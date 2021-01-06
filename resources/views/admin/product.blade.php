@@ -41,7 +41,10 @@
                                                     <td>{{$rs->category_id}}</td>
                                                     <td>{{$rs->title}}</td>
                                                     <td>{{$rs->price}}</td>
-                                                    <td></td>
+                                                    <td>
+                                                        @if($rs->image)
+                                                        <img src="{{Storage::url($rs->image)}}"height="50"alt=""@endif
+                                                    </td>
                                                     <td>{{$rs->tax}}</td>
                                                     <td>{{$rs->quantity}}</td>
                                                     <td>{{$rs->minquantity}}</td>
