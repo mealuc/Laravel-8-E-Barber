@@ -64,6 +64,8 @@ Route::middleware('auth')->prefix('admin')->group(function (){
         Route::get('delete/{id}', [App\Http\Controllers\Admin\ProductController::class, 'destroy'])->name('admin_product_delete');
         Route::get('show', [App\Http\Controllers\Admin\ProductController::class, 'show'])->name('admin_product_show');
     });
+    Route::get('setting', [App\Http\Controllers\Admin\SettingController::class, 'index'])->name('admin_setting');
+    Route::post('setting/update', [App\Http\Controllers\Admin\SettingController::class, 'update'])->name('admin_setting_update');
 });
 Route::get('/home', [HomeController::class, 'index']);
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {

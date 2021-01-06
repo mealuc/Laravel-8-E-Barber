@@ -19,10 +19,13 @@
                 <a class="active-menu" href="index.html"><i class="fa fa-dashboard "></i>Dashboard</a>
             </li>
             <li>
-                <a href="{{route('admin_category')}}"><i class="fa fa-amazon "></i>Category</a>
+                <a href="{{route('admin_category')}}"><i class="fa fa-search "></i>Category</a>
             </li>
             <li>
-                <a href="{{route('admin_products')}}"><i class="fa fa-amazon "></i>Products</a>
+                <a href="{{route('admin_products')}}"><i class="fa fa-scissors "></i>Products</a>
+            </li>
+            <li>
+                <a href="{{route('admin_setting')}}"><i class="fa fa-save "></i>Settings</a>
             </li>
             <li>
                 <a href="#"><i class="fa fa-desktop "></i>UI Elements <span class="fa arrow"></span></a>

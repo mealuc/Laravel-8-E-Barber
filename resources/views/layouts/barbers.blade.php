@@ -38,7 +38,7 @@
             <div class="container">
                 <div class="section-title row text-center">
                     <div class="col-md-8 offset-md-2">
-                        <small>MEET OUR BABRER TEAM</small>
+                        <small>MEET OUR BARBER TEAM</small>
                         <h3>OUR BARBERS</h3>
                     </div>
                 </div><!-- end title -->

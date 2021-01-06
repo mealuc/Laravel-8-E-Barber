@@ -5,7 +5,7 @@
 
 @include('home._loader')
 @include('home._header')
-<!--@include('home._slider')-->
+<!--include('home._slider')-->
 @section('content')
     <!-- Page Content -->
     <div id="page-content-wrapper">

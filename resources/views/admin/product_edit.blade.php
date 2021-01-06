@@ -48,10 +48,10 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Detail</label>
-                                        <textarea id="summernote" name="detail">{{$data->detail}}</textarea>
+                                        <textarea id="detail" name="detail">{{$data->detail}}</textarea>
                                         <script>
                                             $(document).ready(function() {
-                                                $('#summernote').summernote();
+                                                $('#detail').summernote();
                                             });
                                         </script>
                                     </div>
