@@ -233,6 +233,7 @@
                 </div><!-- end row -->
             </div><!-- end container -->
         </div><!-- end section -->
+    </div>
 
     @show
 @include('home._footer')

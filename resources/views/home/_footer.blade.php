@@ -13,10 +13,12 @@
                     <a href="#">SSS</a>
                     <a href="#">İletişim</a>
                 </p>
-                <p class="footer-social">
+                <p>
+                <div class="">
                     @if($setting->facebook != null)<a href="{{$setting->facebook}}" target="_blank" class="fa fa-facebook">Facebook</a>@endif
                     @if($setting->twitter != null)<a href="{{$setting->twitter}}" target="_blank" class="fa fa-facebook">Twitter</a>@endif
                     @if($setting->instagram != null)<a href="{{$setting->instagram}}" target="_blank" class="fa fa-facebook">Instagram</a>@endif
+                </div>
                 </p>
                 <p>
                 <div class="footer-company-name">
