@@ -1,2 +1,96 @@
-
-/** ADD YOUR AWESOME CODES HERE **/
+body{
+    margin: 10;
+    background-color: none;
+    display: grid;
+}
+div#topbanner{
+    width: 1650px;
+    height: 200px;
+    background-color:grey;
+    margin: auto;
+    background-image: url(bannerr.png);
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+div#banner{
+    background-color: #456342;
+    height: 35px;
+    width: 1650px;
+    margin: auto;
+    display: flex;
+}
+div#page{
+    background-color: lightblue;
+    margin: auto;
+    width: 1650px;
+    height: 1000px;
+    background-image: url(page.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div#lsbanner{
+    background-color: purple;
+    margin-right: auto;
+    width: 119px;
+    height: 100%;
+    position: absolute;
+    justify-content: space-between;
+}
+div#rsbanner{
+    background-color: yellow;
+    margin-left: 1769px;
+    width: 119px;
+    height: 100%;
+    position: absolute;
+}
+div#menuitems{
+    background-color: red;
+    font-weight: 600;
+    margin-top: auto;
+    width: 100%;
+}
+#menuitems ul{
+    list-style:none inside;
+    margin:auto;
+    padding-left: 0;
+    text-align:center;
+    display: flex;
+}
+#nav li{
+    display:block;
+    position:relative;
+    float:left;
+    background: #333333;
+    width: 100%;
+}
+#nav li a{
+    display:block;
+    padding:0px;
+    text-decoration:none;
+    width:200px;
+    line-height:35px;
+    color:#ffffff;
+}
+#nav li li a {
+    font-size:85%;
+    text-align: justify;
+}
+#nav li:hover {background:#000000;}
+#nav ul {
+    position:absolute;
+    padding:0;
+    left:0;
+    display:none;
+}
+#nav li:hover ul ul {display:none;}
+#nav li:hover ul {display:block;}
+#nav li li:hover ul {
+    display:block;
+    margin-left:413px;
+    margin-top:-35px;
+}
+footer#footer{
+    color: red;
+    text-align: center;
+    font-weight: 1000;
+}

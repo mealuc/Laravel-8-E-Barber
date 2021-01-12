@@ -27,11 +27,11 @@
                     <br/>
                     <div class="form-group input-group">
                         <span class="input-group-addon"><i class="fa fa-tag"></i></span>
-                        <input type="email" id="email" name="email" class="form-control" placeholder="Your Email "/>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="Email "/>
                     </div>
                     <div class="form-group input-group">
                         <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-                        <input type="password"id="password" name="password"  class="form-control" placeholder="Your Password"/>
+                        <input type="password"id="password" name="password"  class="form-control" placeholder="Şifre"/>
                     </div>
                     <div class="form-group">
                         <label class="checkbox-inline">
@@ -45,7 +45,7 @@
                         <button type="submit" class="btn btn-primary ">Login</button>
                     </div>
                     <hr/>
-                    Not register ? <a href="index.html">click here </a> or go to <a href="index.html">Home</a>
+                    Not register ? <a href="{{route('register')}}">Click Here</a> or go to <a href="{{route('home')}}">Home</a>
                 </form>
             </div>
         </div>

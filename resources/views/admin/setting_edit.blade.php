@@ -113,23 +113,38 @@
                                                 <div class="tab-pane fade" id="aboutus-pills">
                                                     <div class="form-group">
                                                         <label>About Us</label>
-                                                        <textarea id="aboutus" name="aboutus">{{$data->aboutus}}</textarea>
-                                                    </div>                                        </div>
+                                                        <textarea id="aboutUs" name="aboutus">{{$data->aboutus}}</textarea>
+                                                        <script>
+                                                            ClassicEditor
+                                                            .create( document.querySelector( '#aboutUs' ) )
+                                                                .catch( error => {
+                                                                    console.error( error );
+                                                                } );
+                                                        </script>
+                                                    </div>
+                                                </div>
                                                 <div class="tab-pane fade" id="contact-pills">
                                                     <div class="form-group">
                                                         <label>Contact</label>
-                                                        <textarea id="contact" name="contact">{{$data->contact}}</textarea>
+                                                        <textarea id="Contact" name="contact">{{$data->contact}}</textarea>
+                                                        <script>
+                                                            ClassicEditor
+                                                                .create( document.querySelector( '#Contact' ) )
+                                                                .catch( error => {
+                                                                    console.error( error );
+                                                                } );
+                                                        </script>
                                                     </div>                                        </div>
                                                 <div class="tab-pane fade" id="references-pills">
                                                     <div class="form-group">
                                                         <label>References</label>
-                                                        <textarea id="references" name="references">{{$data->references}}</textarea>
-                                                        <script>
-                                                            $(document).ready(function() {
-                                                                $('#aboutus').summernote();
-                                                                $('#contact').summernote();
-                                                                $('#references').summernote();
-                                                            });
+                                                        <textarea id="References" name="references">{{$data->references}}</textarea>
+                                                            <script>
+                                                            ClassicEditor
+                                                                .create( document.querySelector( '#References' ) )
+                                                                .catch( error => {
+                                                                    console.error( error );
+                                                                } );
                                                         </script>
                                                     </div>
                                                 </div>

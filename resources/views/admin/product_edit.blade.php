@@ -13,9 +13,11 @@
                                     @csrf
                                     <div class="form-group">
                                         <label>Category</label>
-                                        <select class="form-control" name="category_id">
+                                        <select class="form-control" name="category_id" id="category_id">
                                             @foreach($datalist as $rs)
-                                                <option value="{{$rs->id}}" @if ($rs->id==$data->category_id) selected="selected" @endif >{{$rs->title}}</option>
+                                                <option value="{{$rs->id}}" @if ($rs->id==$data->category_id) selected="selected" @endif >
+                                                    {{\App\Http\Controllers\Admin\CategoryController::getParentsTree($rs,$rs->title)}}
+                                                </option>
                                             @endforeach
                                         </select>
                                     </div>
@@ -29,7 +31,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Image</label>
-                                        <input class="form-control" type="file" name="image" value="{{$data->image}}">
+                                        <input class="form-control" type="file" name="image">
                                         @if ($data->image)
                                             <img src="{{Storage::url($data->image)}}"height="100"alt=""
                                         @endif
@@ -48,11 +50,13 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Detail</label>
-                                        <textarea id="detail" name="detail">{{$data->detail}}</textarea>
+                                        <textarea id="Detail" name="detail">{{$data->detail}}</textarea>
                                         <script>
-                                            $(document).ready(function() {
-                                                $('#detail').summernote();
-                                            });
+                                            ClassicEditor
+                                                .create( document.querySelector( '#Detail' ) )
+                                                .catch( error => {
+                                                    console.error( error );
+                                                } );
                                         </script>
                                     </div>
                                     <div class="form-group">

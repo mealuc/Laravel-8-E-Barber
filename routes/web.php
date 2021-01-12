@@ -19,15 +19,13 @@ Route::get('/home2', function () {
 })->name('home2');;
 Route::redirect('/anasayfa', '/home')->name('anasayfa');;
 
-Route::get('/admin', [App\Http\Controllers\Admin\HomeController::class, 'admin'])->name('admin')->middleware('auth');
-
 Route::get('/admin/login', [HomeController::class, 'login'])->name('adminlogin');
-
 Route::post('/admin/logincheck', [HomeController::class, 'logincheck'])->name('logincheck');
-
-Route::get('/admin/logout', [HomeController::class, 'logout'])->name('admin_logout');
+Route::get('/logout', [HomeController::class, 'logout'])->name('admin_logout');
 
 Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
+
+Route::get('/faq', [HomeController::class, 'faq'])->name('faq');
 
 Route::get('/appoint', [HomeController::class, 'appoint'])->name('appoint');
 

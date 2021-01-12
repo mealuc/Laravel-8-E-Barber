@@ -5,16 +5,11 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
     <!-- include summernote css/js -->
-    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
-    @endsection
+@endsection
 @section('content')
     <div id="wrapper">
         <div id="page-wrapper">
@@ -24,13 +19,13 @@
                         <h1 class="page-head-line">Product Add</h1>
                         <div class="panel panel-info">
                             <div class="panel-body">
-                                <form role="form" action="{{route('admin_product_store')}}"method="post" enctype="multipart/form-data">
+                                <form role="form" action="{{route('admin_product_store')}}" method="post" enctype="multipart/form-data">
                                     @csrf
                                     <div class="form-group">
                                         <label>Category</label>
                                         <select class="form-control" name="category_id">
                                             @foreach($datalist as $rs)
-                                            <option value="{{$rs->id}}">{{$rs->title}}</option>
+                                                <option value="{{$rs->id}}">{{\App\Http\Controllers\Admin\CategoryController::getParentsTree($rs, $rs->title)}}</option>
                                             @endforeach
                                         </select>
                                     </div>
@@ -60,12 +55,14 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Detail</label>
-                                        <textarea id="summernote" name="detail"></textarea>
+                                        <textarea id="Detail" name="detail"></textarea>
                                         <script>
-                                            $(document).ready(function() {
-                                                $('#summernote').summernote();
-                                            });
-                                        </script>
+                                        ClassicEditor
+                                            .create( document.querySelector( '#Detail' ) )
+                                            .catch( error => {
+                                                console.error( error );
+                                            } );
+                                         </script>
                                     </div>
                                     <div class="form-group">
                                         <label>Keywords</label>
@@ -83,7 +80,6 @@
                                         </select>
                                     </div>
                                     <button type="submit" class="btn btn-primary">Add Product</button>
-
                                 </form>
                             </div>
                         </div>

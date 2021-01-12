@@ -1,4 +1,4 @@
-<!-- LOADER -->
+<!-- LOADER
 <div id="preloader">
     <div class="cube-wrapper">
         <div class="cube-folding">
@@ -12,6 +12,6 @@
         </div>
         <span class="loading" data-name="Loading">StyleBarber Loading</span>
     </div>
-</div>
+</div> -->
 
 

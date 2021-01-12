@@ -232,8 +232,6 @@
                 </div>
             </div>
         </div>
-
-
         <div id="barbers" class="section lb">
             <div class="container">
                 <div class="section-title row text-center">
@@ -395,5 +393,4 @@
             </div><!-- end container -->
         </div>
 @show
-@include()
 <!--Out of usage-->

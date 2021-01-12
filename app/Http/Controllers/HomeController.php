@@ -2,14 +2,17 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
+use App\Models\Setting;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
- //   public function index(){
- //       return view('home.index');
- //   }
+    // public function index(){
+        //$setting= Setting::first();
+        //return view('home.index');
+    //}
     public function logincheck(Request $request)
     {
         if($request->isMethod('post'))
@@ -22,7 +25,7 @@ class HomeController extends Controller
             return back()->withErrors(['email'=>'The provided credentials do not match our records',]);
         }
         else{
-            return view('admin.login');
+            return view('login');
         }
     }
     public function logout(Request $request)
@@ -35,11 +38,23 @@ class HomeController extends Controller
 
         return redirect('/admin/login');
     }
+
+    public static function categorylist()
+    {
+        return Category::where('parent_id', '=' ,0)->with('children')->get();
+    }
+
+    public  static function getSetting()
+    {
+        return Setting::first();
+    }
+
     public function login(){
         return view('admin.login');
     }
     public function home(){
-        return view('layouts.home');
+        $setting=Setting::first();
+        return view('layouts.home',['setting'=>$setting]);
     }
     public function about(){
         return view('layouts.about');
@@ -47,6 +62,11 @@ class HomeController extends Controller
     public function appoint(){
         return view('layouts.appointment');
     }
+
+    public function faq(){
+        return view('layouts.faq');
+    }
+
     public function barbers(){
         return view('layouts.barbers');
     }

@@ -38,12 +38,12 @@
                                             @foreach ($datalist as $rs)
                                                 <tr>
                                                     <td>{{$rs->id}}</td>
-                                                    <td>{{$rs->category_id}}</td>
+                                                    <td>{{ \App\Http\Controllers\Admin\CategoryController::getParentsTree($rs->category,$rs->category->title)}}</td>
                                                     <td>{{$rs->title}}</td>
                                                     <td>{{$rs->price}}</td>
                                                     <td>
                                                         @if($rs->image)
-                                                        <img src="{{Storage::url($rs->image)}}"height="50"alt=""@endif
+                                                            <img src="{{Storage::url($rs->image)}}"height="50"alt=""@endif
                                                     </td>
                                                     <td>{{$rs->tax}}</td>
                                                     <td>{{$rs->quantity}}</td>

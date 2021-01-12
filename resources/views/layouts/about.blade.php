@@ -1,8 +1,6 @@
-<!DOCTYPE html>
 <html lang="en">
 @include('home.head_css')
 <body class="barber_version">
-
 @include('home._loader')
 @include('home._header')
 @section('content')
@@ -23,7 +21,7 @@
                             <div class="clearfix"></div>
 
                             <ol class="breadcrumb">
-                                <li><a href="index-3.html">Home</a></li>
+                                <li><a href="{{route('home')}}">Home</a></li>
                                 <li class="active">About</li>
                             </ol>
                         </div>
