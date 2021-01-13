@@ -1,7 +1,10 @@
-<!DOCTYPE html>
+@section('title',$setting->title)
+@section('description')
+    {{$setting->description}}
+@endsection
+@section('keywords',$setting->keywords)
 <html lang="en">
-<head>
-    @include('home.head_css')
+@include('home.head_css')
 <body class="barber_version">
 @include('home._loader')
 @include('home._header')
@@ -15,15 +18,12 @@
                             <div class="much">
                                 <img src="{{asset('assets')}}/uploads/mustache.png" alt=""/>
                             </div>
-
                             <div class="title--heading">
-                                <h1>Contact</h1>
+                                <h1>Bize Yazın</h1>
                             </div>
                             <div class="clearfix"></div>
-
                             <ol class="breadcrumb">
-                                <li><a href="index-3.html">Home</a></li>
-                                <li class="active">Contact</li>
+                                <li class="active">İletişim</li>
                             </ol>
                         </div>
                         <!-- .title end -->
@@ -33,36 +33,35 @@
         </div><!-- end all-page-bar -->
         <div id="contact" class="section wb">
             <div class="container">
+                @include('home.message')
                 <div class="section-title row text-center">
                     <div class="col-md-8 offset-md-2">
-                        <small>LET'S MAKE AN CONTACT FOR YOUR LIFE</small>
-                        <h3>Contact</h3>
+                        <small>Her Zaman,Her Yerde</small>
+                        <h3>İletişim Bilgileri</h3>
                     </div>
                 </div><!-- end title -->
                 <div class="row">
                     <div class="col-md-8 offset-md-2">
                         <div class="contact_form">
-                            <div id="message"></div>
-                            <form id="contactform" class="row" action="contact.blade.php" name="contactform" method="post">
+                            <form role="form" action="{{route('sendmessage')}}" method="post">
+                                @csrf
                                 <fieldset class="row row-fluid">
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                        <input type="text" name="first_name" id="first_name" class="form-control" placeholder="First Name">
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                        <input type="text" name="last_name" id="last_name" class="form-control" placeholder="Last Name">
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                        <input type="email" name="email" id="email" class="form-control" placeholder="Your Email">
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                        <input type="text" name="phone" id="phone" class="form-control" placeholder="Your Phone">
-                                    </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                        <textarea class="form-control" name="comments" id="comments" rows="6" placeholder="Give us more details.."></textarea>
-                                    </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-                                        <button type="submit" value="SEND" id="submit" class="btn btn-light btn-radius btn-brd grd1 btn-block subt">Submit</button>
-                                    </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <input type="text" name="name" class="form-control" placeholder="Ad & Soyad">
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <input type="text" name="phone" id="phone" class="form-control" placeholder="Telefon">
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <input type="email" name="email" id="email" class="form-control" placeholder="Email">
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <input type="text" name="subject" id="subject" class="form-control" placeholder="Konu">
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <textarea class="form-control" name="message" id="message" rows="6" placeholder="Mesajınızı buraya yazın..."></textarea>
+                                </div>
+                                        <button type="submit" class="btn btn-light btn-radius btn-brd grd1 btn-block subt">Gönder</button>
                                 </fieldset>
                             </form>
                         </div>

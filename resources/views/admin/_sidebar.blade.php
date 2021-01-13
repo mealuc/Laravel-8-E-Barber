@@ -24,6 +24,9 @@
             <li>
                 <a href="{{route('admin_setting')}}"><i class="fa fa-save "></i>Settings</a>
             </li>
+            <li>
+                <a href="{{route('admin_message')}}"><i class="fa fa-medkit "></i>Contact Messages</a>
+            </li>
         </ul>
 
     </div>
