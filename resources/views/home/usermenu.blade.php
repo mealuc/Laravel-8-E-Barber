@@ -5,6 +5,6 @@
         <li><a href="#">Randevularım</a></li>
         <li><a href="#">Geçmiş Randevularım</a></li>
         <li><a href="#">Mesajlarım</a></li>
-        <li><a href="{{route('admin_logout')}}">Çıkış</a></li>
+        <li><a href="{{route('logout')}}">Çıkış</a></li>
     </ul>
 </div>

@@ -27,11 +27,11 @@
                             <a href="#"><strong class="text-uppercase">{{Auth::user()->name}}</strong></a>
                         </div>
                 <li class="nav-item"><a href="{{route('myprofile')}}" class="nav-link"  title="Login">Hesabım</a></li>
-                <li class="nav-item"><a href="{{route('admin_logout')}}" class="nav-link"  title="Login">Çıkış</a></li>
+                <li class="nav-item"><a href="{{route('logout')}}" class="nav-link"  title="Logout">Çıkış</a></li>
                 </li>
                 @endauth
                 @guest
-                    <li class="nav-item"><a href="{{route('adminlogin')}}" class="nav-link"  title="Login">Giriş</a></li>
+                    <li class="nav-item"><a href="{{route('login')}}" class="nav-link"  title="Login">Giriş</a></li>
                     <li class="nav-item"><a href="{{route('register')}}" class="nav-link"  title="Register">Üye Ol</a></li>
                 @endguest
             </div>

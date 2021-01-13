@@ -15,10 +15,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/home2', function () {
-    return view('welcome');
-})->name('home2');;
-Route::redirect('/anasayfa', '/home')->name('anasayfa');;
+
+Route::redirect('/home', '/home')->name('home');;
 
 Route::get('/admin/login', [HomeController::class, 'login'])->name('adminlogin');
 Route::post('/admin/logincheck', [HomeController::class, 'logincheck'])->name('logincheck');
@@ -70,6 +68,10 @@ Route::middleware('auth')->prefix('admin')->group(function (){
 Route::middleware('auth')->prefix('myaccount')->namespace('myaccount')->group(function ()
 {
     Route::get('/', [UserController::class, 'index'])->name('myprofile');
+});
+Route::middleware('auth')->prefix('user')->namespace('user')->group(function ()
+{
+    Route::get('/profile', [UserController::class, 'index'])->name('userprofile');
 });
 Route::get('/home', [HomeController::class, 'index']);
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
