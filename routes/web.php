@@ -39,6 +39,8 @@ Route::get('/', [HomeController::class, 'home'])->name('home');
 
 Route::get('/about', [HomeController::class, 'about'])->name('about');
 
+Route::get('/references', [HomeController::class, 'references'])->name('references');
+
 Route::get('/test', [HomeController::class, 'test'])->name('test');
 
 Route::get('/id/{id}/{name}', [HomeController::class, 'send'])->whereNumber('id')->whereAlpha('name')->name('send');;

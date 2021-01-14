@@ -14,6 +14,7 @@
                     <li class="nav-item"><a class="nav-link" href="{{route('home')}}">Anasayfa</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{route('services')}}">Servislerimiz</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{route('about')}}">Hakkımızda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{route('references')}}">Referanslar</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{route('barbers')}}">Berberlerimiz</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{route('appoint')}}">Randevu</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{route('contact')}}">İletişim</a></li>

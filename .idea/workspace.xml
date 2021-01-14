@@ -19,11 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7772565d-2bfa-43e8-99f7-20e07dfcedd0" name="Default Changelist" comment="User page profile photo and adding new info systems were added.">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fd3813d7-5d85-4492-97ac-90c2e5caa7ef.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fd3813d7-5d85-4492-97ac-90c2e5caa7ef.xml" afterDir="false" />
+    <list default="true" id="7772565d-2bfa-43e8-99f7-20e07dfcedd0" name="Default Changelist" comment="Contact page messages and its relationship with the admin panel were added.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/about.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/contact.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -175,16 +175,16 @@
     <property name="DatabaseDriversLRU" value="mariadb&#10;mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/layouts" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\composer\LJProject\resources\views\layouts" />
       <recent name="C:\composer\LJProject\resources\views\admin" />
       <recent name="C:\composer\LJProject\resources\views\home" />
-      <recent name="C:\composer\LJProject\resources\views\layouts" />
       <recent name="C:\composer\LJProject\app\Http\Controllers\Admin" />
     </key>
   </component>
@@ -261,7 +261,8 @@
       <workItem from="1610534365680" duration="5623000" />
       <workItem from="1610540103234" duration="893000" />
       <workItem from="1610541038296" duration="7774000" />
-      <workItem from="1610555598211" duration="9278000" />
+      <workItem from="1610555598211" duration="9428000" />
+      <workItem from="1610620354539" duration="5552000" />
     </task>
     <task id="LOCAL-00001" summary="Pages Updated">
       <created>1607867906687</created>
@@ -375,7 +376,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610542869083</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Contact page messages and its relationship with the admin panel were added.">
+      <created>1610565068969</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1610565068969</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -409,7 +417,8 @@
     <MESSAGE value="Category tree,sub category,product category tree systems were added.Home page meta tags and settings,user data links and links between pages were arranged." />
     <MESSAGE value="User profile page were added and jetstream page attached to the user profile page." />
     <MESSAGE value="User page profile photo and adding new info systems were added." />
-    <option name="LAST_COMMIT_MESSAGE" value="User page profile photo and adding new info systems were added." />
+    <MESSAGE value="Contact page messages and its relationship with the admin panel were added." />
+    <option name="LAST_COMMIT_MESSAGE" value="Contact page messages and its relationship with the admin panel were added." />
   </component>
   <component name="WindowStateProjectService">
     <state x="336" y="361" key="#SQL_Dialects" timestamp="1609701476037">
@@ -448,10 +457,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1607867830176" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1610542881023">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1610565075772">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1610542881023" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1610565075772" />
     <state x="854" y="407" width="316" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1610538945333">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -69,7 +69,12 @@ class HomeController extends Controller
         return redirect()->route('contact')->with('success','Gönderme Başarılı!');
     }
     public function about(){
-        return view('layouts.about');
+        $setting=Setting::first();
+        return view('layouts.about',['setting'=>$setting]);
+    }
+    public function references(){
+        $setting=Setting::first();
+        return view('layouts.references',['setting'=>$setting]);
     }
     public function appoint(){
         return view('layouts.appointment');
