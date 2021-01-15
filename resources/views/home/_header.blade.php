@@ -18,7 +18,7 @@
                     <li class="nav-item"><a class="nav-link" href="{{route('barbers')}}">Berberlerimiz</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{route('appoint')}}">Randevu</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{route('contact')}}">İletişim</a></li>
-                    <li class="nav-item"><a class="nav-link" href="layouts/faq.html">SSS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{route('faq')}}">SSS</a></li>
                 </ul>
             </div>
             <div>

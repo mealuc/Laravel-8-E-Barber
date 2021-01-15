@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
+use App\Models\Faq;
 use App\Models\Message;
+use App\Models\Product;
 use App\Models\Setting;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -11,8 +13,8 @@ use Illuminate\Support\Facades\Auth;
 class HomeController extends Controller
 {
     // public function index(){
-        //$setting= Setting::first();
-        //return view('home.index');
+    //$setting= Setting::first();
+    //return view('home.index');
     //}
     public function logincheck(Request $request)
     {
@@ -55,7 +57,15 @@ class HomeController extends Controller
     }
     public function home(){
         $setting=Setting::first();
-        return view('layouts.home',['setting'=>$setting]);
+        $slider = Product::select('title','image','price')->limit(4)->get();
+
+        $data=
+            [
+                'setting'=>$setting,
+                'slider'=>$slider,
+                'page'=>'home'
+            ];
+        return view('layouts.home',$data);
     }
     public function sendmessage(Request $request)
     {
@@ -79,11 +89,11 @@ class HomeController extends Controller
     public function appoint(){
         return view('layouts.appointment');
     }
-
     public function faq(){
-        return view('layouts.faq');
+        $setting=Setting::first();
+        $datalist= Faq::all()->sortBy('id');
+        return view('layouts.faq',['datalist'=>$datalist,'setting'=>$setting]);
     }
-
     public function barbers(){
         return view('layouts.barbers');
     }

@@ -27,7 +27,8 @@
                                                 <th>Subject</th>
                                                 <th>Message</th>
                                                 <th>Admin Note</th>
-                                                <th style="align-content: center"colspan="3">Actions</th>
+                                                <th>Status</th>
+                                                <th style="align-content: center"colspan="3" class="text-center">Actions</th>
                                             </tr>
                                             </thead>
                                             <tbody>
@@ -41,8 +42,8 @@
                                                     <td>{{$rs->message}}</td>
                                                     <td>{{$rs->note}}</td>
                                                     <td>{{$rs->status}}</td>
-                                                    <td><a href="{{route('admin_message_edit',['id'=>$rs->id])}}">Edit</a></td>
-                                                    <td><a href="{{route('admin_message_delete',['id'=>$rs->id])}}" onclick="return confirm('It will be deleted! Are you sure?')">Delete</a></td>
+                                                    <td class="text-center"><a href="{{route('admin_message_edit',['id'=>$rs->id])}}">Edit</a> /
+                                                    <a href="{{route('admin_message_delete',['id'=>$rs->id])}}" onclick="return confirm('It will be deleted! Are you sure?')">Delete</a></td>
                                                 </tr>
                                             </tbody>
                                             @endforeach

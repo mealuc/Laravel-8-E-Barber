@@ -27,6 +27,9 @@
             <li>
                 <a href="{{route('admin_message')}}"><i class="fa fa-medkit "></i>Contact Messages</a>
             </li>
+            <li>
+                <a href="{{route('admin_faq')}}"><i class="fa fa-medkit "></i>FAQ</a>
+            </li>
         </ul>
 
     </div>

@@ -31,7 +31,7 @@
                                                 <th>Keywords</th>
                                                 <th>Description</th>
                                                 <th>Status</th>
-                                                <th style="align-content: center"colspan="2">Actions</th>
+                                                <th style="align-content: center"colspan="2"class="text-center">Actions</th>
                                             </tr>
                                             </thead>
                                             <tbody>
@@ -51,8 +51,8 @@
                                                     <td>{{$rs->keywords}}</td>
                                                     <td>{{$rs->description}}</td>
                                                     <td>{{$rs->status}}</td>
-                                                    <td><a href="{{route('admin_product_edit',['id'=>$rs->id])}}">Edit</a></td>
-                                                    <td><a href="{{route('admin_product_delete',['id'=>$rs->id])}}" onclick="return confirm('It will be deleted! Are you sure?')">Delete</a></td>
+                                                    <td class="text-center"><a href="{{route('admin_product_edit',['id'=>$rs->id])}}">Edit</a> /
+                                                    <a href="{{route('admin_product_delete',['id'=>$rs->id])}}" onclick="return confirm('It will be deleted! Are you sure?')">Delete</a></td>
                                                 </tr>
                                             </tbody>
                                             @endforeach
