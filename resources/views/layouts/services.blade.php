@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+@section('title','Services - '.$setting->title)
 @include('home.head_css')
 <body class="barber_version">
 
@@ -18,13 +17,12 @@
                             </div>
 
                             <div class="title--heading">
-                                <h1>Our Services</h1>
+                                <h1>Servislerimiz</h1>
                             </div>
                             <div class="clearfix"></div>
 
                             <ol class="breadcrumb">
-                                <li><a href="{{asset('assets')}}/index-3.html">Home</a></li>
-                                <li class="active">Our Services</li>
+                                <li class="active">Servislerimiz</li>
                             </ol>
                         </div>
                         <!-- .title end -->
@@ -37,10 +35,9 @@
             <div class="container">
                 <div class="section-title row text-center">
                     <div class="col-md-8 offset-md-2">
-                        <small>WELCOME TO THE OUR BARBER SHOP</small>
                         <h3>OUR SERVICES</h3>
                         <hr class="grd1">
-                        <p class="lead">Quisque eget nisl id nulla sagittis auctor quis id. Aliquam quis vehicula enim, non aliquam risus. Sed a tellus quis mi rhoncus dignissim.</p>
+                        <p class="lead">Çeşitli kurumlardan alınan kuaförlük belgesi bulunan ve ödüller almış son derece profeyonel çalışan arkadaşlarımızın tasarladığı kişiye özel tasarımlarla hizmetinizdeyiz. </p>
                     </div>
                 </div><!-- end title -->
 
@@ -50,24 +47,24 @@
                             <div class="uptop">
                                 <img src="{{asset('assets')}}/uploads/barber_service_01.jpg" alt="" class="img-responsive img-rounded alignleft">
                             </div>
-                            <h4>beard, mustache care</h4>
-                            <p>Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit amet massa sodales aliquam at eget quam. Integer ultricies et magna quis.</p>
+                            <h4>Sakal, Bıyık Bakımı</h4>
+                            <p>Mesleğiniz,giyim kuşamınız ve toplumdaki statünüzü göz önünde bulundurarak sadece size özel kafa ve yüz şeklinize göre "Anatomik Saç" ve sakal kesimi yapmaktayız.</p>
                         </div><!-- end issue -->
 
                         <div class="service-wrap text-center clearfix">
                             <div class="uptop">
                                 <img src="{{asset('assets')}}/uploads/barber_service_02.jpg" alt="" class="img-responsive img-rounded alignleft">
                             </div>
-                            <h4>detailed feather cleaning</h4>
-                            <p>Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit amet lacus vitae massa sodales aliquam at eget quam. Integer ultricies et magna quis.</p>
+                            <h4>Detaylı Bakım</h4>
+                            <p>Kaş, kulak burun gibi yüz için ufak ama önemli kısımların bakımını yapıyoruz.</p>
                         </div><!-- end issue -->
 
                         <div class="service-wrap text-center lastchild clearfix">
                             <div class="uptop">
                                 <img src="{{asset('assets')}}/uploads/barber_service_03.jpg" alt="" class="img-responsive img-rounded alignleft">
                             </div>
-                            <h4>facial and skin care</h4>
-                            <p>Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit amet lacus vitae massa sodales aliquam at eget quam. Integer ultricies et magna quis.</p>
+                            <h4>Yüz ve Cilt Bakımı</h4>
+                            <p>Kardeşler Berber ile cildinizdeki ölü deriyi ve yağı temizleyip siyah nokta oluşumunu asgari seviyeye indiriyoruz.</p>
                         </div><!-- end issue -->
                     </div><!-- end col -->
 
@@ -76,24 +73,24 @@
                             <div class="uptop">
                                 <img src="{{asset('assets')}}/uploads/barber_service_04.jpg" alt="" class="img-responsive img-rounded alignleft">
                             </div>
-                            <h4>studio shots</h4>
-                            <p>Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit amet massa sodales aliquam at eget quam. Integer ultricies et magna quis.</p>
+                            <h4>Stüdyo Çekimleri</h4>
+                            <p>Özel günler ve resmi kurumlar için gerekli olan çekimleri profesyonel fotoğrafçı arkadaşlarımızla size sunuyoruz.</p>
                         </div><!-- end issue -->
 
                         <div class="service-wrap text-center clearfix">
                             <div class="uptop">
                                 <img src="{{asset('assets')}}/uploads/barber_service_05.jpg" alt="" class="img-responsive img-rounded alignleft">
                             </div>
-                            <h4>forming the beard</h4>
-                            <p>Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit amet lacus vitae massa sodales aliquam at eget quam. Integer ultricies et magna quis.</p>
+                            <h4>Saç/Sakal Şekillendirme</h4>
+                            <p>Günlük hayatta ya da özel günlerde sizin için saç ve sakal şekillendirme ve düzenleme yapmaktayız.</p>
                         </div><!-- end issue -->
 
                         <div class="service-wrap text-center lastchild clearfix">
                             <div class="uptop">
                                 <img src="{{asset('assets')}}/uploads/barber_service_06.jpg" alt="" class="img-responsive img-rounded alignleft">
                             </div>
-                            <h4>hair wash</h4>
-                            <p>Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit amet lacus vitae massa sodales aliquam at eget quam. Integer ultricies et magna quis.</p>
+                            <h4>Saç Yıkama</h4>
+                            <p>Özel yağlar ve şampuanlarla hassas saçlarınıza masaj ve saç yıkama hizmetini sunuyoruz.</p>
                         </div><!-- end issue -->
                     </div><!-- end col -->
                 </div>

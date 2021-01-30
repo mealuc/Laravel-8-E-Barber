@@ -10,10 +10,10 @@
     <div class="section">
         <div class="container">
             <div class="row">
-                <div class="col-md-1">
+                <div class="col-md-2">
                     @include('home.usermenu')
                 </div>
-                <div class="col-md-11">
+                <div class="col-md-10">
                     @include('profile.show')
                 </div><!-- end section -->
             </div>

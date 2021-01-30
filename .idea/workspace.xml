@@ -19,15 +19,24 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7772565d-2bfa-43e8-99f7-20e07dfcedd0" name="Default Changelist" comment="Contact,About us and References page were added and arranged.">
+    <list default="true" id="7772565d-2bfa-43e8-99f7-20e07dfcedd0" name="Default Changelist" comment="&quot;Frequently Asked Questions&quot; page was added.">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fd3813d7-5d85-4492-97ac-90c2e5caa7ef.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fd3813d7-5d85-4492-97ac-90c2e5caa7ef.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/messages.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/messages.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/product.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/login.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/_slider.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_slider.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/head_css.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/head_css.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/user_profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/user_profile.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/usermenu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/usermenu.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/barbers.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/barbers.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/contact.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/faq.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/faq.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/services.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/services.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -266,7 +275,11 @@
       <workItem from="1610541038296" duration="7774000" />
       <workItem from="1610555598211" duration="9428000" />
       <workItem from="1610620354539" duration="9945000" />
-      <workItem from="1610724261749" duration="12376000" />
+      <workItem from="1610724261749" duration="12473000" />
+      <workItem from="1610985155154" duration="2344000" />
+      <workItem from="1611156246403" duration="4799000" />
+      <workItem from="1611337071586" duration="77000" />
+      <workItem from="1612013333255" duration="9895000" />
     </task>
     <task id="LOCAL-00001" summary="Pages Updated">
       <created>1607867906687</created>
@@ -394,7 +407,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610627407156</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="&quot;Frequently Asked Questions&quot; page was added.">
+      <created>1610737752746</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1610737752746</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -430,21 +450,26 @@
     <MESSAGE value="User page profile photo and adding new info systems were added." />
     <MESSAGE value="Contact page messages and its relationship with the admin panel were added." />
     <MESSAGE value="Contact,About us and References page were added and arranged." />
-    <option name="LAST_COMMIT_MESSAGE" value="Contact,About us and References page were added and arranged." />
+    <MESSAGE value="&quot;Frequently Asked Questions&quot; page was added." />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Frequently Asked Questions&quot; page was added." />
   </component>
   <component name="WindowStateProjectService">
     <state x="336" y="361" key="#SQL_Dialects" timestamp="1609701476037">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="336" y="361" key="#SQL_Dialects/0.0.1920.1040@0.0.1920.1040" timestamp="1609701476037" />
-    <state x="552" y="178" width="969" height="750" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609683802055">
+    <state x="552" y="178" width="969" height="750" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611337156297">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="178" width="969" height="750" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609683802055" />
+    <state x="552" y="178" width="969" height="750" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1611337156297" />
     <state x="702" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610461884458">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="702" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1610461884458" />
+    <state x="705" y="232" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1612018867804">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="705" y="232" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612018867804" />
     <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610731451044">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -469,14 +494,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1607867830176" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1610627412655">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1610737757234">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1610627412655" />
-    <state x="854" y="407" width="316" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1610538945333">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1610737757234" />
+    <state x="854" y="407" width="316" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1612019733024">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="854" y="407" width="316" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1920.1040@0.0.1920.1040" timestamp="1610538945333" />
+    <state x="854" y="407" width="316" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1920.1040@0.0.1920.1040" timestamp="1612019733024" />
     <state x="540" y="175" key="com.intellij.database.dbimport.ImportDialog" timestamp="1610540567525">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -41,6 +41,16 @@ class HomeController extends Controller
 
         return redirect('/login');
     }
+    public function admin_logout(Request $request)
+    {
+        Auth::logout();
+
+        $request->session()->invalidate();
+
+        $request->session()->regenerateToken();
+
+        return redirect('/admin/login');
+    }
 
     public static function categorylist()
     {
@@ -89,16 +99,21 @@ class HomeController extends Controller
     public function appoint(){
         return view('layouts.appointment');
     }
+    public function appxx(){
+        return view('layouts.appxx');
+    }
     public function faq(){
         $setting=Setting::first();
         $datalist= Faq::all()->sortBy('id');
         return view('layouts.faq',['datalist'=>$datalist,'setting'=>$setting]);
     }
     public function barbers(){
-        return view('layouts.barbers');
+        $setting=Setting::first();
+        return view('layouts.barbers',['setting'=>$setting]);
     }
     public function services(){
-        return view('layouts.services');
+        $setting=Setting::first();
+        return view('layouts.services',['setting'=>$setting]);
     }
     public function send($id,$name){
         return view('home.index',['id'=>$id,'name'=>$name]);

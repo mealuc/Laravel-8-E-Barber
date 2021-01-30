@@ -1,4 +1,4 @@
-@section('title',$setting->title)
+@section('title','Home - '.$setting->title)
 @section('description')
     {{$setting->description}}
 @endsection

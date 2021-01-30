@@ -25,7 +25,7 @@
                 <li class="header-account dropdown default-dropdown">
                     @auth
                         <div class="dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="true">
-                            <a href="#"><strong class="text-uppercase">{{Auth::user()->name}}</strong></a>
+                            <a href="#"><strong class="text-uppercase">{{Auth::user()->name}} {{Auth::user()->roles->pluck('name')}}</strong></a>
                         </div>
                 <li class="nav-item"><a href="{{route('myprofile')}}" class="nav-link"  title="Login">Hesabım</a></li>
                 <li class="nav-item"><a href="{{route('logout')}}" class="nav-link"  title="Logout">Çıkış</a></li>

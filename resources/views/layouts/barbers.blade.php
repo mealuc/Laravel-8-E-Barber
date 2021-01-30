@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+@section('title','Barbers - '.$setting->title)
 @include('home.head_css')
 <body class="barber_version">
 
@@ -16,30 +15,24 @@
                             <div class="much">
                                 <img src="{{asset('assets')}}/uploads/mustache.png" alt=""/>
                             </div>
-
                             <div class="title--heading">
-                                <h1>Our Barbers</h1>
+                                <h1>Berberlerimiz</h1>
                             </div>
                             <div class="clearfix"></div>
-
                             <ol class="breadcrumb">
-                                <li><a href="{{asset('assets')}}/index-3.html">Home</a></li>
-                                <li class="active">Our Barbers</li>
+                                <li class="active">Berberlerimiz</li>
                             </ol>
-
                         </div>
                         <!-- .title end -->
                     </div>
                 </div>
             </div>
         </div><!-- end all-page-bar -->
-
         <div id="barbers" class="section lb">
             <div class="container">
                 <div class="section-title row text-center">
                     <div class="col-md-8 offset-md-2">
-                        <small>MEET OUR BARBER TEAM</small>
-                        <h3>OUR BARBERS</h3>
+                        <h3>PROFESYONEL BERBERLERİMİZLE TANIŞIN</h3>
                     </div>
                 </div><!-- end title -->
 
@@ -59,8 +52,8 @@
                                 </div>
                             </div>
                             <div class="widget-title">
-                                <h3>Soren Bo Bostian</h3>
-                                <small>The Founder</small>
+                                <h3>Ahmet Berberci</h3>
+                                <small>Kurucu</small>
                             </div>
                             <!-- end title -->
                             <p>Hello guys, I am Soren from Sirbistana. I am senior art director and founder of The Barber Shop Company.</p>
@@ -83,8 +76,8 @@
                                 </div>
                             </div>
                             <div class="widget-title">
-                                <h3>Bryan Saftler</h3>
-                                <small>The Barber</small>
+                                <h3>Mehmet Berberci</h3>
+                                <small>Kurucu Ortak</small>
                             </div>
                             <!-- end title -->
                             <p>Hello guys, I am Soren from Sirbistana. I am senior art director and barber of the Barber Shop Market.</p>
@@ -107,8 +100,8 @@
                                 </div>
                             </div>
                             <div class="widget-title">
-                                <h3>Matthew Bayliss</h3>
-                                <small>The Barber</small>
+                                <h3>Hikmet Kesen</h3>
+                                <small>Baş Berber</small>
                             </div>
                             <!-- end title -->
                             <p>Hello guys, I am Soren from Sirbistana. I am senior art director and barber of the Barber Shop Website.</p>
@@ -120,7 +113,7 @@
                         <div class="widget our-inner-taem clearfix">
                             <div class="t-top"></div>
                             <div class="hover-br">
-                                <img src="{{asset('assets')}}/uploads/barber_team_01.jpg" alt="" class="img-responsive">
+                                <img src="{{asset('assets')}}/uploads/model3.jpg" alt="" class="img-responsive">
                                 <div class="social-up-hover">
                                     <div class="footer-social">
                                         <a href="#" class="btn grd1"><i class="fa fa-facebook"></i></a>
@@ -131,8 +124,8 @@
                                 </div>
                             </div>
                             <div class="widget-title">
-                                <h3>Soren Bo Bostian</h3>
-                                <small>The Founder</small>
+                                <h3>Süleyman Yoğuran</h3>
+                                <small>Bakım Uzmanı</small>
                             </div>
                             <!-- end title -->
                             <p>Hello guys, I am Soren from Sirbistana. I am senior art director and founder of The Barber Shop Company.</p>
@@ -144,7 +137,7 @@
                         <div class="widget our-inner-taem clearfix">
                             <div class="t-top"></div>
                             <div class="hover-br">
-                                <img src="{{asset('assets')}}/uploads/barber_team_03.jpg" alt="" class="img-responsive">
+                                <img src="{{asset('assets')}}/uploads/model1.jpg" alt="" class="img-responsive">
                                 <div class="social-up-hover">
                                     <div class="footer-social">
                                         <a href="#" class="btn grd1"><i class="fa fa-facebook"></i></a>
@@ -155,8 +148,8 @@
                                 </div>
                             </div>
                             <div class="widget-title">
-                                <h3>Bryan Saftler</h3>
-                                <small>The Barber</small>
+                                <h3>Tarık Işık</h3>
+                                <small>Fotoğrafçı</small>
                             </div>
                             <!-- end title -->
                             <p>Hello guys, I am Soren from Sirbistana. I am senior art director and barber of the Barber Shop Market.</p>
@@ -168,7 +161,7 @@
                         <div class="widget our-inner-taem clearfix">
                             <div class="t-top"></div>
                             <div class="hover-br">
-                                <img src="{{asset('assets')}}/uploads/barber_team_02.jpg" alt="" class="img-responsive">
+                                <img src="{{asset('assets')}}/uploads/model2.jpg" alt="" class="img-responsive">
                                 <div class="social-up-hover">
                                     <div class="footer-social">
                                         <a href="#" class="btn grd1"><i class="fa fa-facebook"></i></a>
@@ -179,8 +172,8 @@
                                 </div>
                             </div>
                             <div class="widget-title">
-                                <h3>Matthew Bayliss</h3>
-                                <small>The Barber</small>
+                                <h3>Fatih Kırpılmış</h3>
+                                <small>Berber</small>
                             </div>
                             <!-- end title -->
                             <p>Hello guys, I am Soren from Sirbistana. I am senior art director and barber of the Barber Shop Website.</p>
@@ -206,7 +199,7 @@
                             <div class="testimonial clearfix">
                                 <div class="testi-meta">
                                     <i class="fa fa-quote-right"></i>
-                                    <img src={{asset('assets')}}/uploads/testi_01.png" alt="" class="img-responsive alignright">
+                                    <img src={{asset('assets')}}/uploads/model3.jpg" alt="" class="img-responsive alignright">
                                     <h4>James Fernando <small>- Manager of Racer</small></h4>
                                 </div>
                                 <div class="desc">
