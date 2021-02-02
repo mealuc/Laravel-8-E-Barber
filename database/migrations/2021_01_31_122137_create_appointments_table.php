@@ -22,7 +22,7 @@ class CreateAppointmentsTable extends Migration
             $table->string('time',12);
             $table->string('payment')->default('No');
             $table->string('IP',20);
-            $table->string('note',150);
+            $table->string('note',150)->nullable();
             $table->string('status',30)->default('New');
             $table->timestamps();
         });

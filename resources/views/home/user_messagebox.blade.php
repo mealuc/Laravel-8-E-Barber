@@ -14,28 +14,31 @@
                 <div class="col-md-10">
                     <div class="panel panel-default">
                         <div class="panel-body">
+                            @include('home.message')
                             <div class="table-responsive">
                                 <table class="table table-hover">
                                     <thead>
                                     <tr>
                                         <th>İsim</th>
+                                        <th>Telefon</th>
                                         <th>Konu</th>
+                                        <th>Email</th>
                                         <th>Mesaj</th>
                                         <th>Admin Mesajı</th>
-                                        <th>Durum</th>
-                                        <th style="align-content: center"colspan="3" class="text-center">Actions</th>
+                                        <th style="align-content: center"colspan="3" class="text-center">Düzenlemeler</th>
                                     </tr>
                                     </thead>
                                     <tbody>
                                     @foreach ($datalist as $rs)
                                         <tr>
                                             <td>{{$rs->name}}</td>
+                                            <td>{{$rs->phone}}</td>
                                             <td>{{$rs->subject}}</td>
+                                            <td>{{$rs->email}}</td>
                                             <td>{{$rs->message}}</td>
                                             <td>{{$rs->note}}</td>
-                                            <td>{{$rs->status}}</td>
-                                            <td class="text-center"><a href="{{route('admin_message_edit',['id'=>$rs->id])}}">Edit</a> /
-                                                <a href="{{route('admin_message_delete',['id'=>$rs->id])}}" onclick="return confirm('It will be deleted! Are you sure?')">Delete</a></td>
+                                            <td class="text-center"><a href="{{route('user_message_edit',['id'=>$rs->id])}}">Düzenle</a> /
+                                                <a href="{{route('user_message_delete',['id'=>$rs->id])}}" onclick="return confirm('Silinecek, Emin misiniz?')">Sil</a></td>
                                         </tr>
                                     </tbody>
                                     @endforeach

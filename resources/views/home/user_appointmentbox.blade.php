@@ -14,6 +14,7 @@
                 <div class="col-md-10">
                     <div class="panel panel-default">
                         <div class="panel-body">
+                            @include('home.message')
                             <div class="table-responsive">
                                 <table class="table table-hover">
                                     <thead>
@@ -27,7 +28,6 @@
                                         <th>Ücret</th>
                                         <th>Ödeme Şekli</th>
                                         <th>Not</th>
-                                        <th>Durum</th>
                                         <th style="align-content: center"colspan="3" class="text-center">Düzenleme</th>
                                     </tr>
                                     </thead>
@@ -43,8 +43,7 @@
                                             <td>{{$rs->price}}</td>
                                             <td>{{$rs->payment}}</td>
                                             <td>{{$rs->note}}</td>
-                                            <td>{{$rs->status}}</td>
-                                            <td class="text-center"><a href="{{route('admin_appointment_edit',['id'=>$rs->id])}}">Düzenle</a> /
+                                            <td class="text-center"><a href="{{route('user_appointment_edit',['id'=>$rs->id])}}">Düzenle</a> /
                                                 <a href="{{route('admin_appointment_delete',['id'=>$rs->id])}}" onclick="return confirm('It will be deleted! Are you sure?')">İptal Et</a></td>
                                         </tr>
                                     </tbody>

@@ -55,9 +55,7 @@ Route::get('/id/{id}/{name}', [HomeController::class, 'send'])->whereNumber('id'
 //Route::get('/', function () {
 //  return view('home.index',['aname' => 'Emre Aluc']);
 Route::middleware('auth')->prefix('admin')->group(function () {
-
     Route::middleware('admin')->group(function () {
-
         Route::get('/', [App\Http\Controllers\Admin\HomeController::class, 'admin'])->name('admin');
         Route::get('category', [CategoryController::class, 'index'])->name('admin_category');
         Route::get('category/add', [CategoryController::class, 'add'])->name('admin_category_add');
@@ -66,7 +64,6 @@ Route::middleware('auth')->prefix('admin')->group(function () {
         Route::post('category/update/{id}', [CategoryController::class, 'update'])->name('admin_category_update');
         Route::get('category/delete/{id}', [CategoryController::class, 'destroy'])->name('admin_category_delete');
         Route::get('category/show', [CategoryController::class, 'show'])->name('admin_category_show');
-
         Route::prefix('product')->group(function () {
             Route::get('/', [ProductController::class, 'index'])->name('admin_products');
             Route::get('create', [ProductController::class, 'create'])->name('admin_product_add');
@@ -76,7 +73,6 @@ Route::middleware('auth')->prefix('admin')->group(function () {
             Route::get('delete/{id}', [ProductController::class, 'destroy'])->name('admin_product_delete');
             Route::get('show', [ProductController::class, 'show'])->name('admin_product_show');
         });
-
         Route::prefix('messages')->group(function () {
             Route::get('/', [MessageController::class, 'index'])->name('admin_message');
             Route::get('edit/{id}', [MessageController::class, 'edit'])->name('admin_message_edit');
@@ -84,11 +80,8 @@ Route::middleware('auth')->prefix('admin')->group(function () {
             Route::get('delete/{id}', [MessageController::class, 'destroy'])->name('admin_message_delete');
             Route::get('show', [MessageController::class, 'show'])->name('admin_message_show');
         });
-
         Route::get('setting', [SettingController::class, 'index'])->name('admin_setting');
         Route::post('setting/update', [SettingController::class, 'update'])->name('admin_setting_update');
-
-
         Route::prefix('faq')->group(function () {
             Route::get('/', [FaqController::class, 'index'])->name('admin_faq');
             Route::get('create', [FaqController::class, 'create'])->name('admin_faq_add');
@@ -98,7 +91,6 @@ Route::middleware('auth')->prefix('admin')->group(function () {
             Route::get('delete/{id}', [FaqController::class, 'destroy'])->name('admin_faq_delete');
             Route::get('show', [FaqController::class, 'show'])->name('admin_faq_show');
         });
-
         Route::prefix('user')->group(function () {
             Route::get('/', [App\Http\Controllers\Admin\UserController::class, 'index'])->name('admin_user');
             Route::get('create', [App\Http\Controllers\Admin\UserController::class, 'create'])->name('admin_user_add');
@@ -120,35 +112,24 @@ Route::middleware('auth')->prefix('admin')->group(function () {
             Route::get('delete/{id}', [App\Http\Controllers\Admin\AppointmentController::class, 'destroy'])->name('admin_appointment_delete');
             Route::get('show', [App\Http\Controllers\Admin\AppointmentController::class, 'show'])->name('admin_appointment_show');
         });
-
     }); #admin
 }); #auth
 Route::middleware('auth')->prefix('myaccount')->namespace('myaccount')->group(function ()
 {
-
     Route::get('/', [UserController::class, 'index'])->name('myprofile');
     Route::get('message', [UserController::class, 'show'])->name('myprofile_message_show');
     Route::get('appointment', [UserController::class, 'appointshow'])->name('myprofile_appointment_show');
+    Route::get('edit/{id}', [App\Http\Controllers\Admin\AppointmentController::class, 'useredit'])->name('user_appointment_edit');
+    Route::get('delete/{id}', [MessageController::class, 'destroy'])->name('user_message_delete');
+    Route::post('edit/{id}', [App\Http\Controllers\Admin\MessageController::class, 'usermessageupdate'])->name('user_message_update');
 });
 Route::middleware('auth')->prefix('user')->namespace('user')->group(function ()
 {
-    Route::post('update/{id}', [App\Http\Controllers\Admin\AppointmentController::class, 'update'])->name('admin_appointment_update');
-    Route::get('edit/{id}', [App\Http\Controllers\Admin\AppointmentController::class, 'useredit'])->name('admin_appointment_edit');
+    Route::post('update/{id}', [App\Http\Controllers\Admin\AppointmentController::class, 'update'])->name('user_appointment_update');
+    Route::get('edit/{id}', [App\Http\Controllers\Admin\MessageController::class, 'usermessageedit'])->name('user_message_edit');
     Route::post('create', [App\Http\Controllers\Admin\AppointmentController::class, 'create'])->name('admin_appointment_add');
     Route::get('delete/{id}', [App\Http\Controllers\Admin\AppointmentController::class, 'destroy'])->name('admin_appointment_delete');
     Route::get('/profile', [UserController::class, 'index'])->name('userprofile');
-
-
-    Route::prefix('appointment')->group(function () {
-        Route::get('/', [App\Http\Controllers\AppointmentController::class, 'index'])->name('user_appointment');
-        Route::post('create', [App\Http\Controllers\AppointmentController::class, 'create'])->name('user_appointment_add');
-        Route::post('store', [App\Http\Controllers\AppointmentController::class, 'store'])->name('user_appointment_store');
-        Route::get('edit/{id}', [App\Http\Controllers\AppointmentController::class, 'edit'])->name('user_appointment_edit');
-        Route::post('update/{id}', [App\Http\Controllers\AppointmentController::class, 'update'])->name('user_appointment_update');
-        Route::get('delete/{id}', [App\Http\Controllers\AppointmentController::class, 'destroy'])->name('user_appointment_delete');
-        Route::get('show', [App\Http\Controllers\AppointmentController::class, 'show'])->name('user_appointment_show');
-    });
-
 });
 Route::get('/home', [HomeController::class, 'index']);
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {

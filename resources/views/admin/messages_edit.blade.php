@@ -38,7 +38,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Admin Notes:</label>
-                                        <textarea class="form-control" type="text" value="{{$data->note}}" name="note"></textarea>
+                                        <textarea class="form-control"id="adminnote" type="text" value="{{$data->note}}" name="note"></textarea>
                                     </div>
                                     <div class="form-group">
                                         <label>Status:</label>

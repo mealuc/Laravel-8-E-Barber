@@ -51,7 +51,7 @@ class UserController extends Controller
      */
     public function show(User $user)
     {
-        $datalist= Message::where('name',Auth::getEmail());
+        $datalist= Message::where('user_id',Auth::id())->get();
         return view('home.user_messagebox',['datalist'=>$datalist]);
     }
 

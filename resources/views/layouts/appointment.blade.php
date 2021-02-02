@@ -53,7 +53,7 @@
                                                     <select id="payment"name="payment" class="form-control">
                                                         <option value="Seçilmedi">Ödeme Şekli</option>
                                                         <option value="Online">Online</option>
-                                                        <option value="Cash">Nakit</option>
+                                                        <option value="Nakit">Nakit</option>
                                                     </select>
                                                 </div>
                                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">

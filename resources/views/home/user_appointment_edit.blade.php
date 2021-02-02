@@ -15,14 +15,14 @@
                     <div class="contact_form">
                         @include('home.message')
                         <div id="message"></div>
-                        <form role="form" action="{{route('admin_appointment_update',['id'=>$data->id])}}" method="post">
+                        <form role="form" action="{{route('user_appointment_update',['id'=>$data->id])}}" method="post">
                             @csrf
                             <fieldset class="row row-fluid">
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <select id="payment"name="payment" class="form-control">
                                         <option selected="selected">{{$data->payment}}</option>
                                         <option value="Online">Online</option>
-                                        <option value="Cash">Nakit</option>
+                                        <option value="Nakit">Nakit</option>
                                     </select>
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -35,11 +35,11 @@
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <select id="date" name="date" class="form-control" >
                                         <option selected="selected">{{$data->date}}</option>
-                                        <option value="Monday">Pazartesi</option>
-                                        <option value="Tuesday">Salı</option>
-                                        <option value="Wednesday">Çarşamba</option>
-                                        <option value="Thursday">Perşembe</option>
-                                        <option value="Friday">Cuma</option>
+                                        <option value="Pazartesi">Pazartesi</option>
+                                        <option value="Salı">Salı</option>
+                                        <option value="Çarşamba">Çarşamba</option>
+                                        <option value="Perşembe">Perşembe</option>
+                                        <option value="Cuma">Cuma</option>
                                     </select>
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">

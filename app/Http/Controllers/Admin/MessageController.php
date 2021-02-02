@@ -46,9 +46,11 @@ class MessageController extends Controller
      * @param  \App\Models\Message  $message
      * @return \Illuminate\Http\Response
      */
-    public function show(Message $message)
+    public function usermessageedit(Message $message,$id)
     {
-        //
+
+        $data= Message::find($id);
+        return view('home.user_messagebox_edit',['data'=>$data]);
     }
 
     /**
@@ -72,6 +74,17 @@ class MessageController extends Controller
      * @param  \App\Models\Message  $message
      * @return \Illuminate\Http\Response
      */
+    public function usermessageupdate(Request $request, Message $message,$id)
+    {
+        $data=Message::find($id);
+        $data->name = $request->input('name');
+        $data->note=$request->input('note');
+        $data->subject=$request->input('subject');
+        $data->message=$request->input('message');
+        $data->save();
+        return back()->with('success','Message Updated');
+    }
+
     public function update(Request $request, Message $message,$id)
     {
         $data=Message::find($id);
@@ -90,6 +103,6 @@ class MessageController extends Controller
     {
         $data=Message::find($id);
         $data->delete();
-        return redirect()->route('admin_message')->with('success','Message Deleted!');
+        return back()->with('success','Message Deleted!');
     }
 }

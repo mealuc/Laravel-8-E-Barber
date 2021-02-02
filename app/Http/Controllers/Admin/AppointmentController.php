@@ -32,8 +32,6 @@ class AppointmentController extends Controller
     {
         $data= new Appointment();
         $data->user_id = Auth::id();
-        #$data->email = User::find(Auth::id())->email;
-        #$data->phone = User::find(Auth::id())->phone;
         $data->price = Product::find($request->input('product_id'))->price;
         $data->product_id = $request->input('product_id');
         $data->date = $request->input('date');
@@ -43,6 +41,8 @@ class AppointmentController extends Controller
         $data->IP = $_SERVER['REMOTE_ADDR'];
         $data->save();
         return back()->with('success','Randevu Kaydedildi!');
+        #$data->email = User::find(Auth::id())->email;
+        #$data->phone = User::find(Auth::id())->phone;
     }
 
     /**

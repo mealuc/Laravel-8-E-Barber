@@ -82,6 +82,7 @@ class HomeController extends Controller
     {
         $data= new Message();
         $data->name = $request->input('name');
+        $data->user_id = Auth::id();
         $data->email = $request->input('email');
         $data->phone = $request->input('phone');
         $data->subject = $request->input('subject');
