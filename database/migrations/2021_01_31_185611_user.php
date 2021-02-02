@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateUsersTable extends Migration
+class User extends Migration
 {
     /**
      * Run the migrations.
@@ -22,12 +22,11 @@ class CreateUsersTable extends Migration
             $table->rememberToken();
             $table->foreignId('current_team_id')->nullable();
             $table->text('profile_photo_path')->nullable();
-            $table->string('address',200)->nullable();
-            $table->string('phone',15)->nullable();
+            $table->string('address', 200)->nullable();
+            $table->string('phone', 15)->nullable();
             $table->timestamps();
         });
     }
-
     /**
      * Reverse the migrations.
      *
@@ -35,6 +34,6 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        //
     }
 }

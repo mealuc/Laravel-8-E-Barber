@@ -15,6 +15,10 @@ class Category extends Model
     {
         return $this->hasMany(Product::class);
     }
+    public function appointment()
+    {
+        return $this->hasMany(Appointment::class);
+    }
     public function parent()
     {
         return $this->belongsTo(Category::class,'parent_id');

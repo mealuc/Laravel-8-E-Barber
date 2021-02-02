@@ -19,24 +19,22 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7772565d-2bfa-43e8-99f7-20e07dfcedd0" name="Default Changelist" comment="&quot;Frequently Asked Questions&quot; page was added.">
+    <list default="true" id="7772565d-2bfa-43e8-99f7-20e07dfcedd0" name="Default Changelist" comment="Users roles and that roles permission control system were added,Some text pages arranged.">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/fd3813d7-5d85-4492-97ac-90c2e5caa7ef.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fd3813d7-5d85-4492-97ac-90c2e5caa7ef.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_13_114840_add_address_to_users.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_13_114840_add_address_to_users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_13_122213_user.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/head_css.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/head_css.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/user_profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/user_profile.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home/usermenu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/usermenu.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/barbers.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/barbers.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/contact.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/faq.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/faq.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/services.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/services.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/appointment.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/appointment.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -187,16 +185,16 @@
     <property name="DatabaseDriversLRU" value="mariadb&#10;mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/layouts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/home" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\composer\LJProject\resources\views\layouts" />
       <recent name="C:\composer\LJProject\resources\views\home" />
       <recent name="C:\composer\LJProject\resources\views\admin" />
+      <recent name="C:\composer\LJProject\resources\views\layouts" />
       <recent name="C:\composer\LJProject\app\Http\Controllers\Admin" />
     </key>
   </component>
@@ -279,7 +277,16 @@
       <workItem from="1610985155154" duration="2344000" />
       <workItem from="1611156246403" duration="4799000" />
       <workItem from="1611337071586" duration="77000" />
-      <workItem from="1612013333255" duration="9895000" />
+      <workItem from="1612013333255" duration="10288000" />
+      <workItem from="1612031660529" duration="11342000" />
+      <workItem from="1612091305189" duration="17227000" />
+      <workItem from="1612115397298" duration="6105000" />
+      <workItem from="1612171638411" duration="587000" />
+      <workItem from="1612192313235" duration="8586000" />
+      <workItem from="1612213096964" duration="959000" />
+      <workItem from="1612214071096" duration="3167000" />
+      <workItem from="1612217603102" duration="5359000" />
+      <workItem from="1612257875271" duration="15764000" />
     </task>
     <task id="LOCAL-00001" summary="Pages Updated">
       <created>1607867906687</created>
@@ -414,7 +421,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610737752746</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Users roles and that roles permission control system were added,Some text pages arranged.">
+      <created>1612023459709</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1612023459709</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -451,7 +465,8 @@
     <MESSAGE value="Contact page messages and its relationship with the admin panel were added." />
     <MESSAGE value="Contact,About us and References page were added and arranged." />
     <MESSAGE value="&quot;Frequently Asked Questions&quot; page was added." />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Frequently Asked Questions&quot; page was added." />
+    <MESSAGE value="Users roles and that roles permission control system were added,Some text pages arranged." />
+    <option name="LAST_COMMIT_MESSAGE" value="Users roles and that roles permission control system were added,Some text pages arranged." />
   </component>
   <component name="WindowStateProjectService">
     <state x="336" y="361" key="#SQL_Dialects" timestamp="1609701476037">
@@ -470,10 +485,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="705" y="232" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612018867804" />
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610731451044">
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1612270260332">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610731451044" />
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612270260332" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1610447369961">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -494,18 +509,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1607867830176" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1610737757234">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1612023465170">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1610737757234" />
-    <state x="854" y="407" width="316" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1612019733024">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1612023465170" />
+    <state x="854" y="407" width="316" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1612222090337">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="854" y="407" width="316" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1920.1040@0.0.1920.1040" timestamp="1612019733024" />
-    <state x="540" y="175" key="com.intellij.database.dbimport.ImportDialog" timestamp="1610540567525">
+    <state x="854" y="407" width="316" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1920.1040@0.0.1920.1040" timestamp="1612222090337" />
+    <state x="540" y="175" key="com.intellij.database.dbimport.ImportDialog" timestamp="1612267353075">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="540" y="175" key="com.intellij.database.dbimport.ImportDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610540567525" />
+    <state x="540" y="175" key="com.intellij.database.dbimport.ImportDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612267353075" />
     <state x="690" y="325" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog" timestamp="1609940412192">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -518,10 +533,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1610540959313" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1609931699437">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1612039372343">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1609931699437" />
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1612039372343" />
     <state x="623" y="225" key="search.everywhere.popup" timestamp="1609854057743">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

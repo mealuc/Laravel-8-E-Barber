@@ -16,7 +16,7 @@
                     <li class="nav-item"><a class="nav-link" href="{{route('about')}}">Hakkımızda</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{route('references')}}">Referanslar</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{route('barbers')}}">Berberlerimiz</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{route('appoint')}}">Randevu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{route('appointment')}}">Randevu</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{route('contact')}}">İletişim</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{route('faq')}}">SSS</a></li>
                 </ul>
@@ -25,7 +25,7 @@
                 <li class="header-account dropdown default-dropdown">
                     @auth
                         <div class="dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="true">
-                            <a href="#"><strong class="text-uppercase">{{Auth::user()->name}} {{Auth::user()->roles->pluck('name')}}</strong></a>
+                            <a href="#"><strong class="text-uppercase">{{Auth::user()->name}}</strong></a>
                         </div>
                 <li class="nav-item"><a href="{{route('myprofile')}}" class="nav-link"  title="Login">Hesabım</a></li>
                 <li class="nav-item"><a href="{{route('logout')}}" class="nav-link"  title="Logout">Çıkış</a></li>

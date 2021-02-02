@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Appointment;
 use App\Models\Category;
 use App\Models\Faq;
 use App\Models\Message;
@@ -96,8 +97,11 @@ class HomeController extends Controller
         $setting=Setting::first();
         return view('layouts.references',['setting'=>$setting]);
     }
-    public function appoint(){
-        return view('layouts.appointment');
+    public function appointment(){
+        $datalist= Product::all();
+        #$datalist = Category::with('children')->get();
+        $setting=Setting::first();
+        return view('layouts.appointment',['setting'=>$setting,'datalist'=>$datalist]);
     }
     public function appxx(){
         return view('layouts.appxx');

@@ -3,12 +3,13 @@
         <ul class="nav" id="main-menu">
             <li>
                 <div class="user-img-div">
-                    <img src="{{asset('assets')}}/admin/assets/img/user.png" class="img-thumbnail" />
-
+                    @if(Auth::user()->profile_photo_path)
+                        <img src="{{Storage::url(Auth::user()->profile_photo_path)}}"class="img-circle elevation-2"alt="User Image">
+                    @endif
                     <div class="inner-text">
-                        Jhon Deo Alex
+                        {{Auth::user()->name}}
                         <br />
-                        <small>Son Giriş : 2 Gün Önce </small>
+                        <small>Son Giriş : Şimdi</small>
                     </div>
                 </div>
             </li>
@@ -28,7 +29,13 @@
                 <a href="{{route('admin_message')}}"><i class="fa fa-medkit "></i>Contact Messages</a>
             </li>
             <li>
-                <a href="{{route('admin_faq')}}"><i class="fa fa-medkit "></i>FAQ</a>
+                <a href="{{route('admin_faq')}}"><i class="fa fa-desktop "></i>FAQ</a>
+            </li>
+            <li>
+                <a href="{{route('admin_user')}}"><i class="fa fa-anchor "></i>Users</a>
+            </li>
+            <li>
+                <a href="{{route('admin_appointment')}}"><i class="fa fa-automobile "></i>Appointments</a>
             </li>
         </ul>
 

@@ -13,4 +13,8 @@ class Product extends Model
     {
         return $this->belongsTo(Category::class);
     }
+    public function appointment()
+    {
+        return $this->hasMany(Appointment::class);
+    }
 }
