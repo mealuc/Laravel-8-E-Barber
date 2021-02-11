@@ -19,20 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7772565d-2bfa-43e8-99f7-20e07dfcedd0" name="Default Changelist" comment="User messsages edit page were added and some of error were fixed.">
+    <list default="true" id="7772565d-2bfa-43e8-99f7-20e07dfcedd0" name="Default Changelist" comment="Some of updates and error were fixed.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AppointmentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AppointmentController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/_sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/appointment.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/appointment.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/appointment_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/appointment_edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/head_css.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/head_css.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/user_appointmentbox.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/user_appointmentbox.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/user_messagebox.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/user_messagebox.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/about.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/barbers.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/barbers.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/messages.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/messages.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/services.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/services.blade.php" afterDir="false" />
     </list>
@@ -304,7 +294,7 @@
       <workItem from="1613034644386" duration="4383000" />
       <workItem from="1613044947449" duration="9010000" />
       <workItem from="1613060335747" duration="890000" />
-      <workItem from="1613070259461" duration="886000" />
+      <workItem from="1613070259461" duration="8129000" />
     </task>
     <task id="LOCAL-00001" summary="Pages Updated">
       <created>1607867906687</created>
@@ -460,7 +450,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612286115871</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Some of updates and error were fixed.">
+      <created>1613071338091</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1613071338091</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -500,7 +497,8 @@
     <MESSAGE value="Users roles and that roles permission control system were added,Some text pages arranged." />
     <MESSAGE value="User appointments systems were added also &quot;user profile&quot; message and appointment arrangement systems were added." />
     <MESSAGE value="User messsages edit page were added and some of error were fixed." />
-    <option name="LAST_COMMIT_MESSAGE" value="User messsages edit page were added and some of error were fixed." />
+    <MESSAGE value="Some of updates and error were fixed." />
+    <option name="LAST_COMMIT_MESSAGE" value="Some of updates and error were fixed." />
   </component>
   <component name="WindowStateProjectService">
     <state x="336" y="361" key="#SQL_Dialects" timestamp="1609701476037">
@@ -543,10 +541,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1607867830176" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1612286120466">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1613071341115">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1612286120466" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1613071341115" />
     <state x="854" y="407" width="316" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1612222090337">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

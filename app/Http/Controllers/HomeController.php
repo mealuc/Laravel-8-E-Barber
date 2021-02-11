@@ -68,15 +68,8 @@ class HomeController extends Controller
     }
     public function home(){
         $setting=Setting::first();
-        $image= Product::all();
-        $slider = Product::select('title','image','price')->limit(4)->get();
-        $data=
-            [
-                'setting'=>$setting,
-                'slider'=>$slider,
-                'page'=>'home'
-            ];
-        return view('layouts.home',$data);
+        $service = Product::select('title','image','price','description','category_id')->limit(6)->orderBy('id')->get();
+        return view('layouts.home',['setting'=>$setting,'service'=>$service]);
     }
     public function sendmessage(Request $request)
     {
@@ -118,7 +111,8 @@ class HomeController extends Controller
     }
     public function services(){
         $setting=Setting::first();
-        return view('layouts.services',['setting'=>$setting]);
+        $service = Product::select('title','image','price','description','category_id')->orderBy('id')->get();
+        return view('layouts.services',['setting'=>$setting,'service'=>$service]);
     }
     public function send($id,$name){
         return view('home.index',['id'=>$id,'name'=>$name]);

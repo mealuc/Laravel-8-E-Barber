@@ -21,6 +21,7 @@
                                             <thead>
                                             <tr>
                                                 <th>ID</th>
+                                                <th>By Who</th>
                                                 <th>Name</th>
                                                 <th>Email</th>
                                                 <th>Phone</th>
@@ -35,6 +36,7 @@
                                             @foreach ($datalist as $rs)
                                                 <tr>
                                                     <td>{{$rs->id}}</td>
+                                                    <td>{{$rs->user_id}}</td>
                                                     <td>{{$rs->name}}</td>
                                                     <td>{{$rs->email}}</td>
                                                     <td>{{$rs->phone}}</td>
