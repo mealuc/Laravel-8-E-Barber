@@ -17,11 +17,11 @@
                                 <img src="uploads/mustache.png" alt=""/>
                             </div>
                             <div class="title--heading">
-                                <h1>About</h1>
+                                <h1>Hakkımızda</h1>
                             </div>
                             <div class="clearfix"></div>
                             <ol class="breadcrumb">
-                                <li class="active">About</li>
+                                <li class="active">Biz kim miyiz?</li>
                             </ol>
                         </div>
                         <!-- .title end -->

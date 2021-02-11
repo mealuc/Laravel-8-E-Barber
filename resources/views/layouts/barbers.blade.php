@@ -44,10 +44,9 @@
                                 <img src="{{asset('assets')}}/uploads/barber_team_01.jpg" alt="" class="img-responsive">
                                 <div class="social-up-hover">
                                     <div class="footer-social">
-                                        <a href="#" class="btn grd1"><i class="fa fa-facebook"></i></a>
-                                        <a href="#" class="btn grd1"><i class="fa fa-github"></i></a>
-                                        <a href="#" class="btn grd1"><i class="fa fa-twitter"></i></a>
-                                        <a href="#" class="btn grd1"><i class="fa fa-linkedin"></i></a>
+                                        <a href="{{$setting->facebook}}" class="btn grd1"><i class="fa fa-facebook"></i></a>
+                                        <a href="{{$setting->twitter}}" class="btn grd1"><i class="fa fa-twitter"></i></a>
+                                        <a href="{{$setting->instagram}}" class="btn grd1"><i class="fa fa-instagram"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -68,10 +67,9 @@
                                 <img src="{{asset('assets')}}/uploads/barber_team_03.jpg" alt="" class="img-responsive">
                                 <div class="social-up-hover">
                                     <div class="footer-social">
-                                        <a href="#" class="btn grd1"><i class="fa fa-facebook"></i></a>
-                                        <a href="#" class="btn grd1"><i class="fa fa-github"></i></a>
-                                        <a href="#" class="btn grd1"><i class="fa fa-twitter"></i></a>
-                                        <a href="#" class="btn grd1"><i class="fa fa-linkedin"></i></a>
+                                        <a href="{{$setting->facebook}}" class="btn grd1"><i class="fa fa-facebook"></i></a>
+                                        <a href="{{$setting->twitter}}" class="btn grd1"><i class="fa fa-twitter"></i></a>
+                                        <a href="{{$setting->instagram}}" class="btn grd1"><i class="fa fa-instagram"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -92,10 +90,9 @@
                                 <img src="{{asset('assets')}}/uploads/barber_team_02.jpg" alt="" class="img-responsive">
                                 <div class="social-up-hover">
                                     <div class="footer-social">
-                                        <a href="#" class="btn grd1"><i class="fa fa-facebook"></i></a>
-                                        <a href="#" class="btn grd1"><i class="fa fa-github"></i></a>
-                                        <a href="#" class="btn grd1"><i class="fa fa-twitter"></i></a>
-                                        <a href="#" class="btn grd1"><i class="fa fa-linkedin"></i></a>
+                                        <a href="{{$setting->facebook}}" class="btn grd1"><i class="fa fa-facebook"></i></a>
+                                        <a href="{{$setting->twitter}}" class="btn grd1"><i class="fa fa-twitter"></i></a>
+                                        <a href="{{$setting->instagram}}" class="btn grd1"><i class="fa fa-instagram"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -116,10 +113,9 @@
                                 <img src="{{asset('assets')}}/uploads/model3.jpg" alt="" class="img-responsive">
                                 <div class="social-up-hover">
                                     <div class="footer-social">
-                                        <a href="#" class="btn grd1"><i class="fa fa-facebook"></i></a>
-                                        <a href="#" class="btn grd1"><i class="fa fa-github"></i></a>
-                                        <a href="#" class="btn grd1"><i class="fa fa-twitter"></i></a>
-                                        <a href="#" class="btn grd1"><i class="fa fa-linkedin"></i></a>
+                                        <a href="{{$setting->facebook}}" class="btn grd1"><i class="fa fa-facebook"></i></a>
+                                        <a href="{{$setting->twitter}}" class="btn grd1"><i class="fa fa-twitter"></i></a>
+                                        <a href="{{$setting->instagram}}" class="btn grd1"><i class="fa fa-instagram"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -140,10 +136,9 @@
                                 <img src="{{asset('assets')}}/uploads/model1.jpg" alt="" class="img-responsive">
                                 <div class="social-up-hover">
                                     <div class="footer-social">
-                                        <a href="#" class="btn grd1"><i class="fa fa-facebook"></i></a>
-                                        <a href="#" class="btn grd1"><i class="fa fa-github"></i></a>
-                                        <a href="#" class="btn grd1"><i class="fa fa-twitter"></i></a>
-                                        <a href="#" class="btn grd1"><i class="fa fa-linkedin"></i></a>
+                                        <a href="{{$setting->facebook}}" class="btn grd1"><i class="fa fa-facebook"></i></a>
+                                        <a href="{{$setting->twitter}}" class="btn grd1"><i class="fa fa-twitter"></i></a>
+                                        <a href="{{$setting->instagram}}" class="btn grd1"><i class="fa fa-instagram"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -164,10 +159,9 @@
                                 <img src="{{asset('assets')}}/uploads/model2.jpg" alt="" class="img-responsive">
                                 <div class="social-up-hover">
                                     <div class="footer-social">
-                                        <a href="#" class="btn grd1"><i class="fa fa-facebook"></i></a>
-                                        <a href="#" class="btn grd1"><i class="fa fa-github"></i></a>
-                                        <a href="#" class="btn grd1"><i class="fa fa-twitter"></i></a>
-                                        <a href="#" class="btn grd1"><i class="fa fa-linkedin"></i></a>
+                                        <a href="{{$setting->facebook}}" class="btn grd1"><i class="fa fa-facebook"></i></a>
+                                        <a href="{{$setting->twitter}}" class="btn grd1"><i class="fa fa-twitter"></i></a>
+                                        <a href="{{$setting->instagram}}" class="btn grd1"><i class="fa fa-instagram"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -184,75 +178,6 @@
             </div><!-- end container -->
         </div><!-- end section -->
 
-        <div id="testimonials" class="parallax section db parallax-inner-bg">
-            <div class="container">
-                <div class="section-title row text-center">
-                    <div class="col-md-8 offset-md-2">
-                        <small>LET'S SEE OUR TESTIMONIALS</small>
-                        <h3>HAPPY TESTIMONIALS</h3>
-                    </div>
-                </div><!-- end title -->
-
-                <div class="row">
-                    <div class="col-md-12 col-sm-12">
-                        <div class="testi-carousel owl-carousel owl-theme">
-                            <div class="testimonial clearfix">
-                                <div class="testi-meta">
-                                    <i class="fa fa-quote-right"></i>
-                                    <img src={{asset('assets')}}/uploads/model3.jpg" alt="" class="img-responsive alignright">
-                                    <h4>James Fernando <small>- Manager of Racer</small></h4>
-                                </div>
-                                <div class="desc">
-                                    <h3>Wonderful Support!</h3>
-                                    <p class="lead">They have got my project on time with the competition with a sed highly skilled, and experienced & professional team.</p>
-                                </div>
-                                <!-- end testi-meta -->
-                            </div>
-                            <!-- end testimonial -->
-                            <div class="testimonial clearfix">
-                                <div class="testi-meta">
-                                    <i class="fa fa-quote-right"></i>
-                                    <img src="{{asset('assets')}}/uploads/testi_02.png" alt="" class="img-responsive alignright">
-                                    <h4>Jacques Philips <small>- Designer</small></h4>
-                                </div>
-                                <div class="desc">
-                                    <h3>Awesome Services!</h3>
-                                    <p class="lead">Explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you completed.</p>
-                                </div>
-                                <!-- end testi-meta -->
-                            </div>
-                            <!-- end testimonial -->
-                            <div class="testimonial clearfix">
-                                <div class="testi-meta">
-                                    <i class="fa fa-quote-right"></i>
-                                    <img src="{{asset('assets')}}/uploads/testi_03.png" alt="" class="img-responsive alignright">
-                                    <h4>Venanda Mercy <small>- Newyork City</small></h4>
-                                </div>
-                                <div class="desc">
-                                    <h3>Great & Talented Team!</h3>
-                                    <p class="lead">The master-builder of human happines no one rejects, dislikes avoids pleasure itself, because it is very pursue pleasure. </p>
-                                </div>
-                                <!-- end testi-meta -->
-                            </div>
-                            <!-- end testimonial -->
-                            <div class="testimonial clearfix">
-                                <div class="testi-meta">
-                                    <i class="fa fa-quote-right"></i>
-                                    <img src="{{asset('assets')}}/uploads/testi_03.png" alt="" class="img-responsive alignright">
-                                    <h4>Venanda Mercy <small>- Newyork City</small></h4>
-                                </div>
-                                <div class="desc">
-                                    <h3> Great & Talented Team!</h3>
-                                    <p class="lead">The master-builder of human happines no one rejects, dislikes avoids pleasure itself, because it is very pursue pleasure. </p>
-                                </div>
-                                <!-- end testi-meta -->
-                            </div>
-                            <!-- end testimonial -->
-                        </div><!-- end carousel -->
-                    </div><!-- end col -->
-                </div><!-- end row -->
-            </div><!-- end container -->
-        </div><!-- end section -->
 @show
 @include('home._footer')
 <!--<a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>-->

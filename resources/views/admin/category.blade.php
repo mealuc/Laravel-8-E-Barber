@@ -23,6 +23,8 @@
                                                 <th>ID</th>
                                                 <th>Parent</th>
                                                 <th>Title</th>
+                                                <th>Keywords</th>
+                                                <th>Description</th>
                                                 <th>Status</th>
                                                 <th class="text-center">Actions</th>
                                             </tr>
@@ -33,6 +35,8 @@
                                                     <td>{{$rs->id}}</td>
                                                     <td>{{ \App\Http\Controllers\Admin\CategoryController::getParentsTree($rs,$rs->title)}}</td>
                                                     <td>{{$rs->title}}</td>
+                                                    <td>{{$rs->keywords}}</td>
+                                                    <td>{{$rs->description}}</td>
                                                     <td>{{$rs->status}}</td>
                                                     <td class="text-center"><a href="{{route('admin_category_edit',['id'=>$rs->id])}}">Edit</a> /
                                                     <a href="{{route('admin_category_delete',['id'=>$rs->id])}}" onclick="return confirm('It will be deleted! Are you sure?')">Delete</a></td>

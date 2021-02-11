@@ -7,11 +7,10 @@
             <div class="footer-left">
                 <p class="footer-links">
                     <a href="{{route('home')}}">Anasayfa</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Ücretlendirme</a>
-                    <a href="#">Hakkında</a>
-                    <a href="#">SSS</a>
-                    <a href="#">İletişim</a>
+                    <a href="{{route('services')}}">Ücretlendirme</a>
+                    <a href="{{route('about')}}">Hakkında</a>
+                    <a href="{{route('faq')}}">SSS</a>
+                    <a href="{{route('contact')}}">İletişim</a>
                 </p>
                 <p>
                 <div class="">
@@ -30,6 +29,12 @@
         </div>
     </div><!-- end container -->
 </div><!-- end copyrights -->
+
+<!-- ALL JS FILES -->
+<script src="{{asset('assets')}}/js/all.js"></script>
+<script src="{{asset('assets')}}/js/responsive-tabs.js"></script>
+<!-- ALL PLUGINS -->
+<script src="{{asset('assets')}}/js/custom.js"></script>
 
 
 

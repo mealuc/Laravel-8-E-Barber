@@ -14,7 +14,7 @@
                 </div>
             </li>
             <li>
-                <a class="active-menu" href="index.html"><i class="fa fa-dashboard "></i>Dashboard</a>
+                <a class="active-menu" href="{{route('admin')}}"><i class="fa fa-dashboard "></i>Dashboard</a>
             </li>
             <li>
                 <a href="{{route('admin_category')}}"><i class="fa fa-search "></i>Category</a>

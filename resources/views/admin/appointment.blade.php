@@ -23,8 +23,6 @@
                                                 <th>ID</th>
                                                 <th>Name</th>
                                                 <th>Job</th>
-                                                <th>Email</th>
-                                                <th>Phone</th>
                                                 <th>Date</th>
                                                 <th>Time</th>
                                                 <th>Price</th>
@@ -38,10 +36,8 @@
                                             @foreach ($datalist as $rs)
                                                 <tr>
                                                     <td>{{$rs->id}}</td>
-                                                    <td>{{$rs->name}}</td>
-                                                    <td>{{$rs->title}}</td>
-                                                    <td>{{$rs->email}}</td>
-                                                    <td>{{$rs->phone}}</td>
+                                                    <td>{{$rs->user_id}}</td>
+                                                    <td>{{$rs->product_id}}</td>
                                                     <td>{{$rs->date}}</td>
                                                     <td>{{$rs->time}}</td>
                                                     <td>{{$rs->price}}</td>

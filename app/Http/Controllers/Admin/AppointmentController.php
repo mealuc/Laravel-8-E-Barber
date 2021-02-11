@@ -6,9 +6,9 @@ use App\Http\Controllers\Controller;
 use App\Models\Appointment;
 use App\Models\User;
 use Illuminate\Http\Request;
-use App\Models\Setting;
 use App\Models\Product;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class AppointmentController extends Controller
 {
@@ -19,6 +19,8 @@ class AppointmentController extends Controller
      */
     public function index()
     {
+
+
         $datalist= Appointment::all();
         return view('admin.appointment',['datalist'=>$datalist]);
     }

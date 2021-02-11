@@ -25,6 +25,7 @@
                                         <th>Email</th>
                                         <th>Mesaj</th>
                                         <th>Admin Mesajı</th>
+                                        <th>Okunma Durumu</th>
                                         <th style="align-content: center"colspan="3" class="text-center">Düzenlemeler</th>
                                     </tr>
                                     </thead>
@@ -37,6 +38,7 @@
                                             <td>{{$rs->email}}</td>
                                             <td>{{$rs->message}}</td>
                                             <td>{{$rs->note}}</td>
+                                            <td>{{$rs->status}}</td>
                                             <td class="text-center"><a href="{{route('user_message_edit',['id'=>$rs->id])}}">Düzenle</a> /
                                                 <a href="{{route('user_message_delete',['id'=>$rs->id])}}" onclick="return confirm('Silinecek, Emin misiniz?')">Sil</a></td>
                                         </tr>

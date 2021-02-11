@@ -68,8 +68,8 @@ class HomeController extends Controller
     }
     public function home(){
         $setting=Setting::first();
+        $image= Product::all();
         $slider = Product::select('title','image','price')->limit(4)->get();
-
         $data=
             [
                 'setting'=>$setting,

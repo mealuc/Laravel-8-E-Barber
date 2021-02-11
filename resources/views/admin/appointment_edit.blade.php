@@ -54,7 +54,7 @@
                                         <textarea class="form-control"value="{{$data->note}}" name="note" id="note" rows="6" placeholder="Eklemek istedikleriniz..."></textarea>
                                     </div>
                                     <div class="form-btn text-center">
-                                        <button type="submit" value="SEND" id="submit" class="btn btn-light btn-radius btn-brd grd1 btn-block subt">Randevu Al</button>
+                                        <button type="submit" value="SEND" id="submit" class="btn btn-light btn-radius btn-brd grd1 btn-block subt">Randevu Düzenle</button>
                                     </div>
                                 </fieldset>
                             </form>

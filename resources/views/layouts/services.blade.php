@@ -30,13 +30,10 @@
                 </div>
             </div>
         </div><!-- end all-page-bar -->
-
         <div id="services" class="section lb">
             <div class="container">
                 <div class="section-title row text-center">
                     <div class="col-md-8 offset-md-2">
-                        <h3>OUR SERVICES</h3>
-                        <hr class="grd1">
                         <p class="lead">Çeşitli kurumlardan alınan kuaförlük belgesi bulunan ve ödüller almış son derece profeyonel çalışan arkadaşlarımızın tasarladığı kişiye özel tasarımlarla hizmetinizdeyiz. </p>
                     </div>
                 </div><!-- end title -->
@@ -97,65 +94,176 @@
             </div><!-- end container -->
         </div><!-- end section -->
 
-        <div id="testimonials" class="parallax section db parallax-inner-bg">
+        <div id="pricing" class="section lb">
             <div class="container">
                 <div class="section-title row text-center">
                     <div class="col-md-8 offset-md-2">
-                        <small>LET'S SEE OUR TESTIMONIALS</small>
-                        <h3>HAPPY TESTIMONIALS</h3>
+                        <h3>Fiyatlandırmamız</h3>
                     </div>
                 </div><!-- end title -->
+                <div class="row flex-items-xs-middle flex-items-xs-center">
 
-                <div class="row">
-                    <div class="col-md-12 col-sm-12">
-                        <div class="testi-carousel owl-carousel owl-theme">
-                            <div class="testimonial clearfix">
-                                <div class="testi-meta">
-                                    <i class="fa fa-quote-right"></i>
-                                    <img src="{{asset('assets')}}/uploads/testi_01.png" alt="" class="img-responsive alignright">
-                                    <h4>James Fernando <small>- Manager of Racer</small></h4>
+                    <!-- Table #1  -->
+                    <div class="col-xs-12 col-lg-4">
+                        <div class="card text-center">
+                            <div class="card-block">
+                                <h4 class="card-title pricing-ti">
+                                    Traş
+                                </h4>
+                                <div class="line-pricing">
+                                    <h5>Sakal Traşı</h5>
+                                    <p>Her türlü sakalı ve sakal türünü istediğiniz şekil ve boyutta keserek size en uygun hale getiriyoruz.</p>
+                                    <a href="{{route('appointment')}}">₺ 10</a>
                                 </div>
-                                <div class="desc">
-                                    <h3>Wonderful Support!</h3>
-                                    <p class="lead">They have got my project on time with the competition with a sed highly skilled, and experienced & professional team.</p>
+                                <div class="line-pricing">
+                                    <h5>Saç Traşı</h5>
+                                    <p>Her türlü saçı ve saç türünü istediğiniz şekil ve boyutta keserek size en uygun hale getiriyoruz.</p>
+                                    <a href="{{route('appointment')}}">₺ 20</a>
                                 </div>
-                                <!-- end testi-meta -->
+                                <div class="line-pricing">
+                                    <h5>Özel Traş</h5>
+                                    <p>Sıradışı tarzlar için geliştirdiğimiz alet ve edevatlarımızla farklılığınızı öne koyuyoruz.</p>
+                                    <a href="{{route('appointment')}}">₺ 30</a>
+                                </div>
                             </div>
-                            <!-- end testimonial -->
-                            <div class="testimonial clearfix">
-                                <div class="testi-meta">
-                                    <i class="fa fa-quote-right"></i>
-                                    <img src="{{asset('assets')}}/uploads/testi_02.png" alt="" class="img-responsive alignright">
-                                    <h4>Jacques Philips <small>- Designer</small></h4>
+                        </div>
+                    </div>
+
+                    <!-- Table #1  -->
+                    <div class="col-xs-12 col-lg-4">
+                        <div class="card text-center">
+                            <div class="card-block">
+                                <h4 class="card-title pricing-ti">
+                                    Fotoğraf Çekimi
+                                </h4>
+                                <div class="line-pricing">
+                                    <h5>Vesikalık Fotoğraf</h5>
+                                    <p>Resmi kurumlar için istenilen ebat ve boylarda istediğiniz sayıda fotoğraf çektiriyoruz.</p>
+                                    <a href="{{route('appointment')}}">₺ 20</a>
                                 </div>
-                                <div class="desc">
-                                    <h3>Awesome Services!</h3>
-                                    <p class="lead">Explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you completed.</p>
+                                <div class="line-pricing">
+                                    <h5>Aile Fotoğrafı</h5>
+                                    <p>Kalıcı bir anı olarak bırakmak istediğiniz aile,soy fotoğraflarını sizler için düzenliyoruz.</p>
+                                    <a href="{{route('appointment')}}">₺ 30</a>
                                 </div>
-                                <!-- end testi-meta -->
+                                <div class="line-pricing">
+                                    <h5>Düğün Fotoğrafı</h5>
+                                    <p>En özel günlerinizi sizin için daha özel bir halde anılaştırarak kalıcı olmasını sağlıyoruz.</p>
+                                    <a href="{{route('appointment')}}">₺ 100</a>
+                                </div>
                             </div>
-                            <!-- end testimonial -->
-                            </div>
-                            <!-- end testimonial -->
-                            <div class="testimonial clearfix">
-                                <div class="testi-meta">
-                                    <i class="fa fa-quote-right"></i>
-                                    <img src="{{asset('assets')}}/uploads/testi_03.png" alt="" class="img-responsive alignright">
-                                    <h4>Venanda Mercy <small>- Newyork City</small></h4>
+                        </div>
+                    </div>
+
+                    <!-- Table #1  -->
+                    <div class="col-xs-12 col-lg-4">
+                        <div class="card text-center">
+                            <div class="card-block">
+                                <h4 class="card-title pricing-ti">
+                                    Saç ve Cilt Bakımı
+                                </h4>
+                                <div class="line-pricing">
+                                    <h5>Bitkisel Yağlar</h5>
+                                    <p>Ünlü aktarlardan geliştirdiğimiz kıl ve cilt bakımı için en özel yağları sizlere sunuyoruz.</p>
+                                    <a href="{{route('appointment')}}">₺ 40</a>
                                 </div>
-                                <div class="desc">
-                                    <h3> Great & Talented Team!</h3>
-                                    <p class="lead">The master-builder of human happines no one rejects, dislikes avoids pleasure itself, because it is very pursue pleasure. </p>
+                                <div class="line-pricing">
+                                    <h5>Masaj</h5>
+                                    <p>Şehir hayatı veya günü stresini atmak için eğitimli elemanlarımızla sizleri rahatlatıyoruz.</p>
+                                    <a href="{{route('appointment')}}">₺ 50</a>
                                 </div>
-                                <!-- end testi-meta -->
+                                <div class="line-pricing">
+                                    <h5>Tam Bakım</h5>
+                                    <p>El,ayak kulak burun v.b daha bir çok özel bakımı sizlerin önüne seriyoruz.</p>
+                                    <a href="{{route('appointment')}}">₺ 85</a>
+                                </div>
                             </div>
-                            <!-- end testimonial -->
-                        </div><!-- end carousel -->
-                    </div><!-- end col -->
-                </div><!-- end row -->
-            </div><!-- end container -->
-        </div><!-- end section -->
+                        </div>
+                    </div>
+                </div>
+                <div class="section-title row text-center">
+                    <div class="col-md-8 offset-md-2">
+                        <h3>Galerimiz</h3>
+                    </div>
+                </div><!-- end title -->
+            </div>
+        </div>
+        <div>
+            <div class="col-lg-7 col-md-2" style="float: right">
+                <div class="owl-services owl-carousel owl-theme">
+                    <div class="service-widget">
+                        <div class="post-media wow fadeIn">
+                            <a href="{{asset('assets')}}/uploads/barber_01.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+                            <img src="{{asset('assets')}}/uploads/barber_01.jpg" alt="" class="img-responsive img-rounded">
+                        </div>
+                        <div class="dit-box">
+                            <h3>Bize Tarzını Göster</h3>
+                            <p>Hayatta hangi tarzda yaşadığını bize söylersin ve yaparız ya da senin için en uygun olanı önerip ona göre yönlendiririz.</p>
+                        </div>
+                    </div><!-- end service -->
+
+                    <div class="service-widget">
+                        <div class="post-media wow fadeIn">
+                            <a href="{{asset('assets')}}/uploads/barber_02.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+                            <img src="{{asset('assets')}}/uploads/barber_02.jpg" alt="" class="img-responsive img-rounded">
+                        </div>
+                        <div class="dit-box">
+                            <h3>Berber Ekipman Kullanımları</h3>
+                            <p>Son derece kaliteli paslanmaz çelik yapımı aletler ve son teknoloji ürünlerle kolaylıkla her zorluğun üstesinden gelebiliriz.İster sen sipariş et istersen biz sipariş edelim.</p>
+                        </div>
+                    </div><!-- end service -->
+
+                    <div class="service-widget">
+                        <div class="post-media wow fadeIn">
+                            <a href="{{asset('assets')}}/uploads/barber_03.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+                            <img src="{{asset('assets')}}/uploads/barber_03.jpg" alt="" class="img-responsive img-rounded">
+                        </div>
+                        <div class="dit-box">
+                            <h3>Berber Ekipmanları</h3>
+                            <p>Son derece rahat bekleme koltukları ve her türlü ayarlanabilen berber koltuğu ile işlem süreci ve bekleme süresince rahat etmeni sağlarız.</p>
+                        </div>
+                    </div><!-- end service -->
+
+                    <div class="service-widget">
+                        <div class="post-media wow fadeIn">
+                            <a href="{{asset('assets')}}/uploads/barber_04.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+                            <img src="{{asset('assets')}}/uploads/barber_04.jpg" alt="" class="img-responsive img-rounded">
+                        </div>
+                        <div class="dit-box">
+                            <h3>Berber Materyalleri</h3>
+                            <p>Her kullanımda yıkanan havlular ve özel karışım temizleme suyuyla kesinlikle temiz olacak şekilde eşyaları temizler senin sağlını en üst dereceden gözetleriz.</p>
+                        </div>
+                    </div><!-- end service -->
+
+                    <div class="service-widget">
+                        <div class="post-media wow fadeIn">
+                            <a href="{{asset('assets')}}/uploads/barber_05.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+                            <img src="{{asset('assets')}}/uploads/barber_05.jpg" alt="" class="img-responsive img-rounded">
+                        </div>
+                        <div class="dit-box">
+                            <h3>Berber Sunumları</h3>
+                            <p>İşlem süresince ya da işlem sonrası ikramlarımız mevcuttur.İşlem sonrası her yeri ayna olan özel kabinimizde özel yerleştirilmiş ışıklarla kendini kontrol edebilirsin.</p>
+                        </div>
+                    </div><!-- end service -->
+
+                    <div class="service-widget">
+                        <div class="post-media wow fadeIn">
+                            <a href="{{asset('assets')}}/uploads/barber_06.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+                            <img src="{{asset('assets')}}/uploads/barber_06.jpg" alt="" class="img-responsive img-rounded">
+                        </div>
+                        <div class="dit-box">
+                            <h3>Berber Teşhirleri</h3>
+                            <p>Son derece kaliteli partner ve ortaklarımızla sana en iyi kalitede ürün sunmaktan onur duyarız.</p>
+                        </div>
+                    </div><!-- end service -->
+                </div>
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+
+    </div><!-- end section -->
     <!-- Menu Toggle Script -->
+
     <script>
         (function($) {
             "use strict";

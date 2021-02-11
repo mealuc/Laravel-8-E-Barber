@@ -21,28 +21,26 @@
                                     <tr>
                                         <th>İsim</th>
                                         <th>İşlem</th>
-                                        <th>Email</th>
-                                        <th>Telefon</th>
                                         <th>Tarih</th>
                                         <th>Saat</th>
                                         <th>Ücret</th>
                                         <th>Ödeme Şekli</th>
                                         <th>Not</th>
+                                        <th>Okunma Durumu</th>
                                         <th style="align-content: center"colspan="3" class="text-center">Düzenleme</th>
                                     </tr>
                                     </thead>
                                     <tbody>
                                     @foreach ($datalist as $rs)
                                         <tr>
-                                            <td>{{$rs->name}}</td>
-                                            <td>{{$rs->title}}</td>
-                                            <td>{{$rs->email}}</td>
-                                            <td>{{$rs->phone}}</td>
+                                            <td>{{$rs->user_id}}</td>
+                                            <td>{{$rs->product_id}}</td>
                                             <td>{{$rs->date}}</td>
                                             <td>{{$rs->time}}</td>
                                             <td>{{$rs->price}}</td>
                                             <td>{{$rs->payment}}</td>
                                             <td>{{$rs->note}}</td>
+                                            <td>{{$rs->status}}</td>
                                             <td class="text-center"><a href="{{route('user_appointment_edit',['id'=>$rs->id])}}">Düzenle</a> /
                                                 <a href="{{route('admin_appointment_delete',['id'=>$rs->id])}}" onclick="return confirm('It will be deleted! Are you sure?')">İptal Et</a></td>
                                         </tr>
