@@ -10,17 +10,11 @@
 @include('home._header')
 
 @section('content')
-    <div>
-        @include('home._slider')
-    </div>
+    @include('home._slider')
     <!-- Page Content -->
-
     <div id="page-content-wrapper">
-
         <div class="section wb">
-
             <div class="container">
-
                 <div class="row align-items-center">
                     <div class="col-md-6 text-left">
                         <div class="message-box">
@@ -83,7 +77,7 @@
                         <div class="col-md-6" >
                             <div class="service-wrap text-center clearfix">
                                 <div class="uptop">
-                                    <a href="{{route('appointment')}}"><img src="{{Storage::url($rs->image)}}" alt="" class="img-responsive img-rounded alignleft"></a>
+                                    <a href="{{route('productdetail',['id'=>$rs->id])}}"><img src="{{Storage::url($rs->image)}}" alt="" class="img-responsive img-rounded alignleft"></a>
                                 </div>
                                 <h4>{{$rs->title}}</h4>
                                 <p>{{$rs->description}}</p>
@@ -124,74 +118,7 @@
                         </div>
                     </div><!-- end container -->
             </div><!-- end section -->
-            <div id="barbers" class="section lb">
-                <div class="container">
-                    <div class="section-title row text-center">
-                        <div class="col-md-8 offset-md-2">
-                            <small>Kurucularımızla Tanışın</small>
-                            <h3>KURUCULARIMIZ</h3>
-                        </div>
-                    </div><!-- end title -->
 
-                    <div class="row dev-list text-center" >
-                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-                            <div class="widget our-inner-taem clearfix">
-                                <div class="t-top"></div>
-                                <div class="hover-br">
-                                    <img src="{{asset('assets')}}/uploads/barber_team_01.jpg" alt="" class="img-responsive">
-                                    <div class="social-up-hover">
-                                        <div class="footer-social">
-                                            <b>Sosyal Medyalar</b>
-                                            <div>
-                                                <a href="{{$setting->facebook}}" class="btn grd1"><i class="fa fa-facebook"></i></a>
-                                                <a href="{{$setting->twitter}}" class="btn grd1"><i class="fa fa-twitter"></i></a>
-                                                <a href="{{$setting->instagram}}" class="btn grd1"><i class="fa fa-instagram"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="team-box">
-                                    <div class="widget-title">
-                                        <h3>Ahmet Berberci</h3>
-                                        <small>Kurucu</small>
-                                    </div>
-                                    <!-- end title -->
-                                    <p>Herkese selamlar ben Ahmet Berberci.Bu mekanın kurucusuyum.Kardeşimle beraber bu hizmeti size vermekten onur ve gurur duyuyoruz</p>
-                                </div>
-                                <div class="t-bottom"></div>
-                            </div><!--widget -->
-                        </div><!-- end col -->
-
-                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
-                            <div class="widget our-inner-taem clearfix">
-                                <div class="t-top"></div>
-                                <div class="hover-br">
-                                    <img src="{{asset('assets')}}/uploads/barber_team_03.jpg" alt="" class="img-responsive">
-                                    <div class="social-up-hover">
-                                        <div class="footer-social">
-                                            <b>Sosyal Medyalar</b>
-                                            <div>
-                                                <a href="{{$setting->facebook}}" class="btn grd1"><i class="fa fa-facebook"></i></a>
-                                                <a href="{{$setting->twitter}}" class="btn grd1"><i class="fa fa-twitter"></i></a>
-                                                <a href="{{$setting->instagram}}" class="btn grd1"><i class="fa fa-instagram"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="team-box">
-                                    <div class="widget-title">
-                                        <h3>Mehmet Berberci</h3>
-                                        <small>Kurucu Ortak</small>
-                                    </div>
-                                    <!-- end title -->
-                                    <p>Herkese selamlar ben Mehmet Berberci.Bu mekanın kurucu ortağıyım.Kardeşimle beraber bu hizmeti size vermekten onur ve gurur duyuyoruz</p>
-                                </div>
-                                <div class="t-bottom"></div>
-                            </div><!--widget -->
-                        </div><!-- end col -->
-                    </div><!-- end row -->
-                </div><!-- end container -->
-            </div><!-- end section -->
             <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
             @show
             @include('home._footer')

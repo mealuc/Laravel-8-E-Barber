@@ -47,7 +47,7 @@
                         <div class="col-md-6" >
                             <div class="service-wrap text-center clearfix">
                                 <div class="uptop">
-                                    <a href="{{route('appointment')}}"><img src="{{Storage::url($rs->image)}}" alt="" class="img-responsive img-rounded alignleft"></a>
+                                    <a href="{{route('productdetail',['id'=>$rs->id])}}"><img src="{{Storage::url($rs->image)}}" alt="" class="img-responsive img-rounded alignleft"></a>
                                 </div>
                                 <h4>{{$rs->title}}</h4>
                                 <p>{{$rs->description}}</p>

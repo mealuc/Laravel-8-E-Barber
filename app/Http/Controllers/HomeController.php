@@ -68,7 +68,7 @@ class HomeController extends Controller
     }
     public function home(){
         $setting=Setting::first();
-        $service = Product::select('title','image','price','description','category_id')->limit(6)->orderBy('id')->get();
+        $service = Product::select('id','title','image','price','description','category_id')->limit(6)->orderBy('id')->get();
         return view('layouts.home',['setting'=>$setting,'service'=>$service]);
     }
     public function sendmessage(Request $request)
@@ -91,6 +91,15 @@ class HomeController extends Controller
         $setting=Setting::first();
         return view('layouts.references',['setting'=>$setting]);
     }
+
+    public function productdetail($id)
+    {
+        $setting=Setting::first();
+        $data=Product::find($id);
+        $service = Product::all();
+        return view('home.product_detail',['data'=>$data,'service'=>$service,'setting'=>$setting]);
+    }
+
     public function appointment(){
         $datalist= Product::all();
         #$datalist = Category::with('children')->get();
@@ -111,7 +120,7 @@ class HomeController extends Controller
     }
     public function services(){
         $setting=Setting::first();
-        $service = Product::select('title','image','price','description','category_id')->orderBy('id')->get();
+        $service = Product::select('id','title','image','price','description','category_id')->orderBy('id')->get();
         return view('layouts.services',['setting'=>$setting,'service'=>$service]);
     }
     public function send($id,$name){

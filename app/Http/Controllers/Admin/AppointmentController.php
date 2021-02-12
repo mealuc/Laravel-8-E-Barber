@@ -47,6 +47,8 @@ class AppointmentController extends Controller
         #$data->phone = User::find(Auth::id())->phone;
     }
 
+
+
     /**
      * Store a newly created resource in storage.
      *
@@ -68,6 +70,8 @@ class AppointmentController extends Controller
     {
         //
     }
+
+
 
     /**
      * Show the form for editing the specified resource.

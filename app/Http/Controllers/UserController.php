@@ -21,6 +21,8 @@ class UserController extends Controller
         return view('home.user_profile');
     }
 
+
+
     /**
      * Show the form for creating a new resource.
      *
