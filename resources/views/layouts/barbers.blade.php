@@ -55,7 +55,7 @@
                                 <small>Kurucu</small>
                             </div>
                             <!-- end title -->
-                            <p>Hello guys, I am Soren from Sirbistana. I am senior art director and founder of The Barber Shop Company.</p>
+                            <p>Herkese selamlar ben Ahmet Berberci.Bu mekanın kurucusuyum.Kardeşimle beraber bu hizmeti size vermekten onur ve gurur duyuyoruz</p>
                             <div class="t-bottom"></div>
                         </div><!--widget -->
                     </div><!-- end col -->
@@ -78,7 +78,7 @@
                                 <small>Kurucu Ortak</small>
                             </div>
                             <!-- end title -->
-                            <p>Hello guys, I am Soren from Sirbistana. I am senior art director and barber of the Barber Shop Market.</p>
+                            <p>Herkese selamlar ben Ahmet Berberci.Bu mekanın kurucusuyum.Kardeşimle beraber bu hizmeti size vermekten onur ve gurur duyuyoruz</p>
                             <div class="t-bottom"></div>
                         </div><!--widget -->
                     </div><!-- end col -->
@@ -101,7 +101,7 @@
                                 <small>Baş Berber</small>
                             </div>
                             <!-- end title -->
-                            <p>Hello guys, I am Soren from Sirbistana. I am senior art director and barber of the Barber Shop Website.</p>
+                            <p>Herkese selamlar ben Hikmet Kesen.Bu mekanın usta berberiyim.Bu hizmeti size vermekten onur ve gurur duyuyoruz</p>
                             <div class="t-bottom"></div>
                         </div><!--widget -->
                     </div><!-- end col -->
@@ -124,7 +124,7 @@
                                 <small>Bakım Uzmanı</small>
                             </div>
                             <!-- end title -->
-                            <p>Hello guys, I am Soren from Sirbistana. I am senior art director and founder of The Barber Shop Company.</p>
+                            <p>Herkese selamlar ben Süleyman Yoğuran.Bu mekanın masaj ve bakım uzmanıyım.Sizlere hizmet etmekten onur duyarım.</p>
                             <div class="t-bottom"></div>
                         </div><!--widget -->
                     </div><!-- end col -->
@@ -147,7 +147,7 @@
                                 <small>Fotoğrafçı</small>
                             </div>
                             <!-- end title -->
-                            <p>Hello guys, I am Soren from Sirbistana. I am senior art director and barber of the Barber Shop Market.</p>
+                            <p>Herkese selamlar ben Tarık Işık.Bu mekanın fotoğrafçısıyım.Yıllardan beri süregelen fotoğraf çekim deneyimimle her zaman hizmetinizdeyim.</p>
                             <div class="t-bottom"></div>
                         </div><!--widget -->
                     </div><!-- end col -->
@@ -170,7 +170,7 @@
                                 <small>Berber</small>
                             </div>
                             <!-- end title -->
-                            <p>Hello guys, I am Soren from Sirbistana. I am senior art director and barber of the Barber Shop Website.</p>
+                            <p>Herkese selamlar ben Fatih Kırpılmış.Bu mekanın bir diğer berberiyim.Sizin için en iyi olanı bulup sizi mutlu ve sağlıklı kılmaktan onur duyarım.</p>
                             <div class="t-bottom"></div>
                         </div><!--widget -->
                     </div><!-- end col -->

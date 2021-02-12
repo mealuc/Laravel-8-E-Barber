@@ -35,6 +35,6 @@
 <script src="{{asset('assets')}}/js/responsive-tabs.js"></script>
 <!-- ALL PLUGINS -->
 <script src="{{asset('assets')}}/js/custom.js"></script>
-
+<script src="{{asset('assets')}}/js/jssor.slider-28.1.0.min.js"></script>
 
 

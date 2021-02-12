@@ -8,11 +8,19 @@
 <body class="barber_version">
 @include('home._loader')
 @include('home._header')
+
 @section('content')
+    <div>
+        @include('home._slider')
+    </div>
     <!-- Page Content -->
+
     <div id="page-content-wrapper">
+
         <div class="section wb">
+
             <div class="container">
+
                 <div class="row align-items-center">
                     <div class="col-md-6 text-left">
                         <div class="message-box">
@@ -109,6 +117,7 @@
                                     </div>
                                     @endforeach
                                     <!-- Table #1  -->
+                                        <a href="{{route('services')}}" class="btn btn-light btn-radius btn-brd grd1 effect-1 col-lg-12">DAHA FAZLA...</a>
                                 </div>
                             </div>
                             </div>
@@ -186,7 +195,7 @@
             <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
             @show
             @include('home._footer')
-
+            </div>
         </div>
 </body>
 </html>
